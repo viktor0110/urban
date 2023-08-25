@@ -1,23 +1,20 @@
+import page from '../node_modules/page/page.mjs';
+import { decorateContext } from '../services/viewsService.js'
+import { renderHome } from '../controllers/homePage.js';
 
-const homeController = require('../controllers/homeController');
-const aboutController = require('../controllers/aboutController');
-const createController = require('../controllers/createController');
-const detailsController = require('../controllers/detailsController');
-const defaultController = require('../controllers/defaultController');
-const accessoriesController = require('../controllers/accessoriesController');
-const authorizationController = require('../controllers/authorizationController');
-const cubeController = require('../controllers/cubeController');
-const { hasUser, hasRole} = require('../middlewares/guards.js');
+export  function app() {
+    page(decorateContext);
+    page('/index.html', '/');
+    page('/', renderHome);
+    // page('/login', renderLogin);
+    // page('/register', renderRegister);
+    // page('/logout', logoutAction);
+    // page('/create', renderCreate);
+    // page('/details/:id', renderDetails);
+    // page('/edit/:id', renderEdit);
+    // page('/dashboard', renderDashboard);
 
-
-module.exports = (app) => {
-    app.use(homeController);
-    app.use('/about', aboutController);
-    app.use('/create', hasUser(), createController);
-    app.use('/details', detailsController);
-    app.use('/accessories',hasRole('admin'), accessoriesController);
-    app.use('/auth', authorizationController);
-    app.use('/cube', cubeController);
-
-    app.all('*', defaultController);
+    page.start();
 }
+
+
