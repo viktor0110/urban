@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Marker' ;
+    src: url('./font/PermanentMarker-Regular.ttf');
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    height: 15vh;
+    position: sticky;
+    top: 0;
+}
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar__main {
+    font-size: 27px;
+    letter-spacing: 4px;
+    font-family: 'Marker', cursive;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-bar__main--left--home:hover ,.nav-bar__main--left--gallery:hover ,.nav-bar__main--right--booking:hover ,.nav-bar__main--right--contact:hover{
+    color: #f3d22d;
+}
+.nav-bar__main--left {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.nav-bar__main--right {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.nav-bar__main--middle--logo--img {
+    width: 210px;
+    height: 155px;
+    object-fit: fill;
+}
+.nav-bar__main--middle--logo {
+    position: relative;
+    top: 20px;
+    left: 6px;
+}
+main {
+    color: white;
+    text-align: center;
+}
+.nav-bar__end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.nav-bar__end button {
+padding: 2px 18px;
+font-size: 15px;
+font-family:'Roboto',sans-serif;
+background-color: black;
+color: white;
+border-radius: 5px;
+border: white 2px solid;
+}
+.nav-bar__end button:hover {
+color: #f3d22d;
+border-color: #f3d22d;
+}
+footer {
+    text-align: center;
+    color: white;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.nav-bar__main--logout {
+    /* default shoud be none */
+    display: block;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.links__instagram--icon, .links__facebook--icon, .links__google--icon {
+    font-size: 35px;
+}
+.links__instagram--icon:hover, .links__facebook--icon:hover, .links__google--icon:hover {
+    color: #f3d22d;
+}
+.copyright {
+    font-family:'Roboto',sans-serif;
+    display: block;
+    font-size: 15px;
+}
+.copyright__author:hover {
+    color: #f3d22d;
+}
