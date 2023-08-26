@@ -17,9 +17,9 @@ export const layoutTemplate = (user, content) => html`
                 </div>
             </div>
             <div class="nav-bar__end" id="user-btns">
-                <button class="nav-bar__main--login" id="login">Login</button>
+                <button class="nav-bar__main--login" id="login"><a href="/login">Login</a></button>
                 <button class="nav-bar__main--register" id="register">Register</button>
-                <button class="nav-bar__main--logout" id="logout">Logout</button>
+                <button class="nav-bar__main--logout" id="logout"><a href="/logout">Logout</a></button>
             </div>
 </nav>
 </header>

@@ -1,4 +1,4 @@
-async function logoutAction(ctx) {
-    await logout();
+export async function renderLogout(ctx) {
+    // await logout();
     ctx.page.redirect('/');
   }

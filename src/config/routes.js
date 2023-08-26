@@ -1,11 +1,14 @@
-import page from '../node_modules/page/page.mjs';
 import { decorateContext } from '../services/viewsService.js'
 import { renderHome } from '../controllers/homePage.js';
+import { renderLogin } from '../controllers/loginPage.js';
+import { renderLogout } from '../controllers/logoutPage.js';
 
-export  function app() {
+export  function app(page) {
     page(decorateContext);
     page('/index.html', '/');
     page('/', renderHome);
+    page('/login', renderLogin);
+    page('/logout', renderLogout);
     // page('/login', renderLogin);
     // page('/register', renderRegister);
     // page('/logout', logoutAction);
