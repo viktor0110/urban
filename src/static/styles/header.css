@@ -39,6 +39,8 @@ header {
 .nav-bar__main--right {
     display: flex;
     flex-direction: row;
+    position: relative;
+    left: 120px;
     gap: 40px;
 }
 
@@ -51,15 +53,13 @@ header {
 .nav-bar__main--middle--logo {
     position: relative;
     top: 20px;
-    left: 6px;
+    left: 55px;
 }
 
 .nav-bar__end {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: right;
-    gap: 10px;
     position: relative;
     top: 0px;
     right: -750px;
