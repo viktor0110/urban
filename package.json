@@ -1,11 +1,10 @@
 {
   "name": "urban",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "nodemon app.js",
+    "server": "nodemon server.js",
     "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1"
   },
   "keywords": [],
