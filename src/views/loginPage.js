@@ -1,5 +1,5 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
-import { createSubmitHandler } from '../services/user.js';
+import { createSubmitHandler } from '../services/data.js';
 
 export async function renderLoginPage (ctx) {
     ctx.render(loginTemplate(createSubmitHandler(onLogin)));

@@ -79,3 +79,69 @@ header {
     /* default shoud be none */
     display: block;
 }
+/* .hero{
+    width: 100%;
+    min-height: 100vh;
+} */
+.user-pic {
+    width: 50px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 12px;
+    margin-right: 10px;
+}
+.user-pic:hover {
+    color: #f3d22d;
+    border: 2px solid #f3d22d;
+}
+.sub-menu-wrap{
+    font-family: 'Marker', cursive;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    border: #fff 2px solid;
+    padding: 20px;
+    margin: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-info h3{
+    font-weight: 500;
+}
+.user-info h3:hover{
+   color: #f3d22d;
+}
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: white;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+
+

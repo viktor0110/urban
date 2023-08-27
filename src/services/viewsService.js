@@ -13,3 +13,4 @@ export function renderView(content) {
     //getUser();
     render(layoutTemplate(user, content), root);
   };
+

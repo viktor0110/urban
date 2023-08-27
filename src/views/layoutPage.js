@@ -16,10 +16,26 @@ export const layoutTemplate = (user, content) => html`
                     <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>
                 </div>
             </div>
-            <div class="nav-bar__end" id="user-btns">
-                <button class="nav-bar__main--login" id="login"><a class="user" href="/login">Login</a></button>
-                <button class="nav-bar__main--register" id="register"><a class="user" href="/register">Register</a></button>
-                <button class="nav-bar__main--logout" id="logout"><a class="user" href="/logout">Logout</a></button>
+            <div class="nav-bar__end hero" id="user-btns">
+                <i @click=${toggleMenu} class="fa-regular fa-user user-pic"></i>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <h3>username</h3>
+                    </div>
+                    <hr>
+                    <a href="/login" class="sub-menu-link">
+                      <p>Login</p>
+                    </a>
+                    <a href="/register" class="sub-menu-link">
+                      <p>Register</p>
+                    </a>
+                    <a href="/logout" class="sub-menu-link">
+                      <p>Logout</p>
+                    </a>
+                  </div>
+                </div>
             </div>
 </nav>
 </header>
@@ -38,3 +54,10 @@ export const layoutTemplate = (user, content) => html`
   </div>
     </footer>
 `;
+
+
+
+function toggleMenu() {
+  let subMenu = document.getElementById('subMenu');
+  subMenu.classList.toggle("open-menu");
+}
