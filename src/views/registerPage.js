@@ -28,6 +28,16 @@ const registerTemplate = (handler) => html`
                 </div>
 
                 <div class="on-dark">
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="Viktor Stefanov" value="">
+                </div>
+
+                <div class="on-dark">
+                    <label for="phone">Phone:</label>
+                    <input id="phone" name="phone" type="number" placeholder="+359 886 003 010" value="">
+                </div>
+
+                <div class="on-dark">
                     <label for="password">Password:</label>
                     <input id="password" name="password" type="password" placeholder="********" value="">
                 </div>
