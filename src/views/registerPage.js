@@ -1,7 +1,7 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { createSubmitHandler } from '../services/user.js';
 
-export async function renderRegister (ctx) {
+export async function renderRegisterPage(ctx) {
     ctx.render(registerTemplate(createSubmitHandler(onRegister)));
 
     async function onRegister(data) {

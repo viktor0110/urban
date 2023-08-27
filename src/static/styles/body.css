@@ -6,3 +6,6 @@ a {
     text-decoration: none;
     color: white;
 }
+a:hover {
+    color: #f3d22d;
+}

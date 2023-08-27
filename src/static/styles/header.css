@@ -28,12 +28,7 @@ header {
     text-align: center;
 }
 
-.nav-bar__main--left--home>a:hover,
-.nav-bar__main--left--gallery>a:hover,
-.nav-bar__main--right--booking>a:hover,
-.nav-bar__main--right--contact>a:hover {
-    color: #f3d22d;
-}
+
 
 .nav-bar__main--left {
     display: flex;
@@ -78,13 +73,6 @@ header {
     color: white;
     border-radius: 5px;
     border: white 2px solid;
-}
-
-.nav-bar__end button:hover {
-    border-color: #f3d22d;
-}
-.user:hover {
-    color: #f3d22d;
 }
 
 .nav-bar__main--logout {

@@ -16,14 +16,9 @@ footer {
 .links__instagram--icon, .links__facebook--icon, .links__google--icon {
     font-size: 35px;
 }
-.links__instagram--icon:hover, .links__facebook--icon:hover, .links__google--icon:hover {
-    color: #f3d22d;
-}
+
 .copyright {
     font-family:'Roboto',sans-serif;
     display: block;
     font-size: 15px;
-}
-.copyright__author:hover {
-    color: #f3d22d;
 }

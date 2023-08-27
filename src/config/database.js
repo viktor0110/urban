@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+import mongoose  from 'mongoose';
 
-const connectionString = 'mongodb://127.0.0.1:27017/cubicles';
+const connectionString = 'mongodb://127.0.0.1:27017/urban';
 
-module.exports = async (app) => {
+const databaseConfig = async () => {
     try {
         await mongoose.connect(connectionString, {
             useUnifiedTopology: true,
@@ -15,3 +15,5 @@ module.exports = async (app) => {
         process.exit(1);
     }
 }; 
+
+export { databaseConfig };
