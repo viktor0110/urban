@@ -114,6 +114,7 @@ header {
     width: 100%;
     background: white;
     margin: 15px 0 10px;
+    margin-bottom: 20px;
 }
 .sub-menu-link{
     display: flex;
