@@ -5,6 +5,9 @@ export async function renderHomePage(ctx) {
 }
 
 const homeTemplate = () => html`
+<br>
+<br>
+<br>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
