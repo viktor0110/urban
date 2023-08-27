@@ -5,21 +5,21 @@ export const layoutTemplate = (user, content) => html`
        <nav class="nav-bar"> 
             <div class="nav-bar__main">
                 <div class="nav-bar__main--left">
-                    <div class="nav-bar__main--left--home" id="home">HOME</div>
-                    <div class="nav-bar__main--left--gallery" id="gallery">GALLERY</div>
+                    <div class="nav-bar__main--left--home" id="home"><a href="/">HOME</a></div>
+                    <div class="nav-bar__main--left--gallery" id="gallery"><a href="/gallery">GALLERY</a></div>
                 </div>
                 <div class="nav-bar__main--middle">
-                    <div class="nav-bar__main--middle--logo"><img class="nav-bar__main--middle--logo--img" id="logo" src="./src/static/images/logo new 2023 transperant cutted.png" alt=""></div>
+                    <div class="nav-bar__main--middle--logo"><img class="nav-bar__main--middle--logo--img" id="logo" src="./src/static/images/logo new 2023 transperant cutted.png" alt="no-img"></div>
                 </div>
                 <div class="nav-bar__main--right">
-                    <div class="nav-bar__main--right--booking" id="booking">BOOKING</div>
-                    <div class="nav-bar__main--right--contact" id="contact">CONTACT</div>
+                    <div class="nav-bar__main--right--booking" id="booking"><a href="/booking">BOOKING</a></div>
+                    <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>
                 </div>
             </div>
             <div class="nav-bar__end" id="user-btns">
-                <button class="nav-bar__main--login" id="login"><a href="/login">Login</a></button>
-                <button class="nav-bar__main--register" id="register">Register</button>
-                <button class="nav-bar__main--logout" id="logout"><a href="/logout">Logout</a></button>
+                <button class="nav-bar__main--login" id="login"><a class="user" href="/login">Login</a></button>
+                <button class="nav-bar__main--register" id="register"><a class="user" href="/register">Register</a></button>
+                <button class="nav-bar__main--logout" id="logout"><a class="user" href="/logout">Logout</a></button>
             </div>
 </nav>
 </header>
