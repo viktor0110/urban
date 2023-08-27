@@ -14,7 +14,9 @@ export const layoutTemplate = (user, content) => html`
                 </div>
                 <div class="nav-bar__main--right">
                     <div class="nav-bar__main--right--booking" id="booking"><a href="/booking">BOOKING</a></div>
-                    <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>
+                    ${user.username == 'admin' ? html`
+                    <div class="nav-bar__main--right--contact" id="contact"><a href="/create">CREATE</a></div>` : html`
+                    <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>`}
                 </div>
             </div>
             ${user ? html`

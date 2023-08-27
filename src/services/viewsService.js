@@ -9,8 +9,8 @@ export function decorateContext(ctx, next) {
   };
 
 export function renderView(content) {
-    const user = undefined;
-    // const user = { username: 'admin'};
+    // const user = undefined;
+    const user = { username: 'admin'};
     render(layoutTemplate(user, content), root);
   };
 
