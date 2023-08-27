@@ -1,4 +1,5 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
+import { toggleMenu } from '../services/user.js';
 
 export const layoutTemplate = (user, content) => html`
 <header class="header">
@@ -16,13 +17,30 @@ export const layoutTemplate = (user, content) => html`
                     <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>
                 </div>
             </div>
+            ${user ? html`
             <div class="nav-bar__end hero" id="user-btns">
                 <i @click=${toggleMenu} class="fa-regular fa-user user-pic"></i>
 
                 <div class="sub-menu-wrap" id="subMenu">
                   <div class="sub-menu">
                     <div class="user-info">
-                      <h3>username</h3>
+                      <h1>${user.username}</h1>
+                    </div>
+                    <hr>
+                    <a href="/logout" class="sub-menu-link">
+                      <p>Logout</p>
+                    </a>
+                  </div>
+                </div>
+            </div>`
+            : html`
+            <div class="nav-bar__end hero" id="user-btns">
+                <i @click=${toggleMenu} class="fa-regular fa-user user-pic"></i>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <h1>Guest</h1>
                     </div>
                     <hr>
                     <a href="/login" class="sub-menu-link">
@@ -31,12 +49,9 @@ export const layoutTemplate = (user, content) => html`
                     <a href="/register" class="sub-menu-link">
                       <p>Register</p>
                     </a>
-                    <a href="/logout" class="sub-menu-link">
-                      <p>Logout</p>
-                    </a>
                   </div>
                 </div>
-            </div>
+            </div>` }
 </nav>
 </header>
 <main class="main" id="main">
@@ -57,7 +72,3 @@ export const layoutTemplate = (user, content) => html`
 
 
 
-function toggleMenu() {
-  let subMenu = document.getElementById('subMenu');
-  subMenu.classList.toggle("open-menu");
-}

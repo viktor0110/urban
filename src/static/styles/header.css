@@ -60,32 +60,13 @@ header {
     flex-wrap: wrap;
     justify-content: right;
     gap: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: relative;
+    top: 0px;
+    right: -750px;
 }
 
-.nav-bar__end button {
-    padding: 2px 18px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    border: white 2px solid;
-}
-
-.nav-bar__main--logout {
-    /* default shoud be none */
-    display: block;
-}
-/* .hero{
-    width: 100%;
-    min-height: 100vh;
-} */
 .user-pic {
     width: 50px;
-    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 100%;
     cursor: pointer;
@@ -98,6 +79,7 @@ header {
 }
 .sub-menu-wrap{
     font-family: 'Marker', cursive;
+    font-size: 20px;
     letter-spacing: 5px;
     position: absolute;
     top: 100%;
@@ -111,7 +93,7 @@ header {
     max-height: 400px;
 }
 .sub-menu{
-    border: #fff 2px solid;
+    border: white 2px solid;
     padding: 20px;
     margin: 10px;
 }
@@ -120,10 +102,10 @@ header {
     align-items: center;
     justify-content: center;
 }
-.user-info h3{
+.user-info h1{
     font-weight: 500;
 }
-.user-info h3:hover{
+.user-info h1:hover{
    color: #f3d22d;
 }
 .sub-menu hr {
