@@ -4,12 +4,15 @@
 </p>
 
 <p align="center">
-Simple Single Page Application with client side rendering.Using Local REST Service. Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
+Simple Single Page Application with client side rendering.Using Local REST Service. 
+<br>
+Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
 </p>
 <p align="center">
 Instructions for starting the project:
 <br>
 -install all dependencies with:
+<br>
 npm i
 -open terminal and run the http-server with:
 npm run start.
