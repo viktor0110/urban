@@ -5,7 +5,7 @@
 
 <p align="center">
 Simple Single Page Application with client side rendering.Using Local REST Service. Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
-
+</p>
 Instructions for starting the project:
 
 -install all dependencies with:
