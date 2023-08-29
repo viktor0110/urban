@@ -6,13 +6,13 @@
 <p align="center">
 Simple Single Page Application with client side rendering.Using Local REST Service. Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
 </p>
+<p align="center">
 Instructions for starting the project:
-
 -install all dependencies with:
 npm i
-
 -open terminal and run the http-server with:
 npm run start.
-
+</p>
+<p align="center">
 Application is not responsive.Default screen-resolution is 2560x1080. 
 </p>
