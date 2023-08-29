@@ -9,7 +9,7 @@
 @import url('./loginPage.css');
 @import url('./registerPage.css');
 @import url('./uploadPage.css');
-
+@import url('./mediaQueries.css');
 @font-face {
     font-family: 'Marker' ;
     src: url('../font/PermanentMarker-Regular.ttf');
@@ -19,6 +19,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 
 
 

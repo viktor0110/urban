@@ -2,21 +2,55 @@
     <nav class="nav-bar"> 
          <div class="nav-bar__main">
              <div class="nav-bar__main--left">
-                 <div class="nav-bar__main--left--home" id="home">HOME</div>
-                 <div class="nav-bar__main--left--gallery" id="gallery">GALLERY</div>
+                 <div class="nav-bar__main--left--home" id="home"><a href="/">HOME</a></div>
+                 <div class="nav-bar__main--left--gallery" id="gallery"><a href="/gallery">GALLERY</a></div>
              </div>
              <div class="nav-bar__main--middle">
-                 <div class="nav-bar__main--middle--logo"><img class="nav-bar__main--middle--logo--img" id="logo" src="./src/images/logo new 2023 transperant cutted.png" alt=""></div>
+                <a href="/">
+                    <div class="nav-bar__main--middle--logo"><img class="nav-bar__main--middle--logo--img" id="logo" src="./src/assets/images/logo new 2023 transperant cutted.png" alt="no-img"></div>
+                </a>
              </div>
              <div class="nav-bar__main--right">
-                 <div class="nav-bar__main--right--booking" id="booking">BOOKING</div>
-                 <div class="nav-bar__main--right--contact" id="contact">CONTACT</div>
+                 <div class="nav-bar__main--right--booking" id="booking"><a href="/booking">BOOKING</a></div>
+                 ${user && user.username == 'admin' ? html`
+                 <div class="nav-bar__main--right--contact" id="contact"><a href="/upload">UPLOAD</a></div>` : html`
+                 <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>`}
              </div>
          </div>
-         <div class="nav-bar__end" id="user-btns">
-             <button class="nav-bar__main--login" id="login">Login</button>
-             <button class="nav-bar__main--register" id="register">Register</button>
-             <button class="nav-bar__main--logout" id="logout">Logout</button>
-         </div>
+         ${user ? html`
+         <div class="nav-bar__end hero" id="user-btns">
+             <i @click=${toggleMenu} class="fa-regular fa-user user-pic"></i>
+
+             <div class="sub-menu-wrap" id="subMenu">
+               <div class="sub-menu">
+                 <div class="user-info">
+                   <h1>${user.username}</h1>
+                 </div>
+                 <hr>
+                 <a href="/logout" class="sub-menu-link">
+                   <p>Logout</p>
+                 </a>
+               </div>
+             </div>
+         </div>`
+         : html`
+         <div class="nav-bar__end hero" id="user-btns">
+             <i @click=${toggleMenu} class="fa-regular fa-user user-pic"></i>
+
+             <div class="sub-menu-wrap" id="subMenu">
+               <div class="sub-menu">
+                 <div class="user-info">
+                   <h1>Guest</h1>
+                 </div>
+                 <hr>
+                 <a href="/login" class="sub-menu-link">
+                   <p>Login</p>
+                 </a>
+                 <a href="/register" class="sub-menu-link">
+                   <p>Register</p>
+                 </a>
+               </div>
+             </div>
+         </div>` }
 </nav>
 </header>
