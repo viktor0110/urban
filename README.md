@@ -3,7 +3,7 @@
   <img align="center" src="https://github.com/viktor0110/urban/blob/master/site-review/urban-site-review.gif" />
 </p>
 
-
+<p align="center">
 Simple Single Page Application with client side rendering.Using Local REST Service. Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
 
 Instructions for starting the project:
@@ -15,3 +15,4 @@ npm i
 npm run start.
 
 Application is not responsive.Default screen-resolution is 2560x1080. 
+</p>
