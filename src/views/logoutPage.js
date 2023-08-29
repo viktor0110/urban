@@ -1,4 +1,7 @@
 export async function renderLogoutPage(ctx) {
-    // await logout();
+    if(ctx.user) {
+          // await logout();
+    } 
+   
     ctx.page.redirect('/');
   }

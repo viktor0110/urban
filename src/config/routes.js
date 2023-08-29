@@ -6,6 +6,7 @@ import { renderHomePage } from '../views/homePage.js';
 import { renderLoginPage } from '../views/loginPage.js';
 import { renderLogoutPage } from '../views/logoutPage.js';
 import { renderRegisterPage } from '../views/registerPage.js';
+import { renderUploadPage } from '../views/uploadPage.js';
 
 export function app(page) {
     page(decorateContext);
@@ -15,8 +16,9 @@ export function app(page) {
     page('/logout', renderLogoutPage);
     page('/register', renderRegisterPage);
     page('/contact', renderContactPage);
-    page('/gallery', renderGalleryPage)
-    page('/booking', renderBookingPage)
+    page('/gallery', renderGalleryPage);
+    page('/booking', renderBookingPage);
+    page('/upload', renderUploadPage);
 
     page.start();
 }
