@@ -6,6 +6,8 @@
 @import url('./content.css');
 @import url('./galleryPage.css');
 @import url('./bookingPage.css');
+@import url('./loginPage.css');
+@import url('./registerPage.css');
 
 @font-face {
     font-family: 'Marker' ;

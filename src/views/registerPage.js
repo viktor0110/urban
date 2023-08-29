@@ -19,39 +19,44 @@ export async function renderRegisterPage(ctx) {
 
 const registerTemplate = (handler) => html`
 <section id="registerPage">
-            <form @submit=${handler} class="registerForm">
-                <img src="./images/logo.png" alt="logo" />
-                <h2>Register</h2>
-                <div class="on-dark">
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="text" placeholder="steven@abv.bg" value="">
-                </div>
+    <br>
+    <br>
+    <br>
+    <form @submit=${handler} class="registerForm">
+        <div class="on-dark">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="text" placeholder="viktor@abv.bg" value="">
+        </div>
+        
+        <div class="on-dark">
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" placeholder="********" value="">
+        </div>
 
-                <div class="on-dark">
-                    <label for="name">Name:</label>
-                    <input id="name" name="name" type="text" placeholder="Viktor Stefanov" value="">
-                </div>
+        <div class="on-dark">
+            <label for="repeatPassword">Repeat Password:</label>
+            <input id="repeatPassword" name="repeatPassword" type="password" placeholder="********" value="">
+        </div>
 
-                <div class="on-dark">
-                    <label for="phone">Phone:</label>
-                    <input id="phone" name="phone" type="number" placeholder="+359 886 003 010" value="">
-                </div>
+        <div class="on-dark">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Viktor Stefanov" value="">
+        </div>
 
-                <div class="on-dark">
-                    <label for="password">Password:</label>
-                    <input id="password" name="password" type="password" placeholder="********" value="">
-                </div>
+        <div class="on-dark">
+            <label for="phone">Phone:</label>
+            <input id="phone" name="phone" type="number" placeholder="+359886003010" value="">
+        </div>
 
-                <div class="on-dark">
-                    <label for="repeatPassword">Repeat Password:</label>
-                    <input id="repeatPassword" name="repeatPassword" type="password" placeholder="********" value="">
-                </div>
-
-                <button class="btn" type="submit">Register</button>
-
-                <p class="field">
-                    <span>If you have profile click <a href="/login">here</a></span>
-                </p>
-            </form>
-        </section>
+        <br>
+        <br>
+        <button class="btn" type="submit">Register</button>
+        <br>
+        <br>
+        <br>
+        <p class="field">
+            <span>If you have profile click <a class="log-btn" href="/login">here</a></span>
+        </p>
+    </form>
+</section>
 `;

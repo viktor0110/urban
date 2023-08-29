@@ -16,24 +16,30 @@ export async function renderLoginPage (ctx) {
 
 const loginTemplate = (handler) => html`
 <section id="loginPage">
-<form @submit=${handler} class="loginForm">
-    <img src="./images/logo.png" alt="logo" />
-    <h2>Login</h2>
+    <br>
+    <br>
+    <br>
+    <form @submit=${handler} class="loginForm">
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="text" placeholder="viktor@abv.bg" value="">
+        </div>
 
-    <div>
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="text" placeholder="steven@abv.bg" value="">
-    </div>
-
-    <div>
-        <label for="password">Password:</label>
-        <input id="password" name="password" type="password" placeholder="********" value="">
-    </div>
-
-    <button class="btn" type="submit">Login</button>
-
-    <p class="field">
-        <span>If you don't have profile click <a href="/register">here</a></span>
-    </p>
-</form>
-</section>`;
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" placeholder="********" value="">
+        </div>
+        <br>
+        <button class="btn" type="submit">Login</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="field">
+            <span>If you don't have profile click <a class="reg-btn" href="/register">here</a></span>
+        </p>
+    </form>
+</section>
+`;
