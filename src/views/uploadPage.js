@@ -18,9 +18,6 @@ export async function renderUploadPage(ctx) {
 
 const uploadTemplate = (handler) => html`
 <section id="uploadPage">
-    <br>
-    <br>
-    <br>
     <form @submit=${handler} class="uploadForm">
         <div>
             <label for="photo">Photo:</label>

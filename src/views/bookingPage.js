@@ -6,9 +6,6 @@ export async function renderBookingPage(ctx) {
 
 const bookingTemplate = () => html`
 <section id="bookingPage">
-<br>
-<br>
-<br>
 <h1 class="message">TO DO WHEN LEARN REACT</h1>
 <br>
 <img src="../../src/assets/images/calendarView.jpg" alt="">

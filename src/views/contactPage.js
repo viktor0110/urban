@@ -6,9 +6,6 @@ export async function renderContactPage(ctx) {
 
 const contactTemplate = () => html`
 <section id="contactPage">
-    <br>
-    <br>
-    <br>
     <div class="contact-info">
         <span>София, Студентски град,ул.Витали Таджер 12, бл.7A</span>
         <span>+359 886 003 10</span>
