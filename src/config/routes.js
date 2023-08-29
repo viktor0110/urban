@@ -1,4 +1,5 @@
 import { decorateContext } from '../services/viewsService.js'
+import { renderBookingPage } from '../views/bookingPage.js';
 import { renderContactPage } from '../views/contactPage.js';
 import { renderGalleryPage } from '../views/galleryPage.js';
 import { renderHomePage } from '../views/homePage.js';
@@ -15,10 +16,7 @@ export function app(page) {
     page('/register', renderRegisterPage);
     page('/contact', renderContactPage);
     page('/gallery', renderGalleryPage)
-    // page('/create', renderCreate);
-    // page('/details/:id', renderDetails);
-    // page('/edit/:id', renderEdit);
-    // page('/dashboard', renderDashboard);
+    page('/booking', renderBookingPage)
 
     page.start();
 }

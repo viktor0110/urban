@@ -11,13 +11,13 @@ export const layoutTemplate = (user, content) => html`
              </div>
              <div class="nav-bar__main--middle">
                 <a href="/">
-                    <div class="nav-bar__main--middle--logo"><img class="nav-bar__main--middle--logo--img" id="logo" src="./src/static/images/logo new 2023 transperant cutted.png" alt="no-img"></div>
+                    <div class="nav-bar__main--middle--logo"><img class="nav-bar__main--middle--logo--img" id="logo" src="./src/assets/images/logo new 2023 transperant cutted.png" alt="no-img"></div>
                 </a>
              </div>
              <div class="nav-bar__main--right">
                  <div class="nav-bar__main--right--booking" id="booking"><a href="/booking">BOOKING</a></div>
                  ${user && user.username == 'admin' ? html`
-                 <div class="nav-bar__main--right--contact" id="contact"><a href="/create">CREATE</a></div>` : html`
+                 <div class="nav-bar__main--right--contact" id="contact"><a href="/upload">UPLOAD</a></div>` : html`
                  <div class="nav-bar__main--right--contact" id="contact"><a href="/contact">CONTACT</a></div>`}
              </div>
          </div>
