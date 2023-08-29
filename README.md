@@ -8,6 +8,7 @@ Simple Single Page Application with client side rendering.Using Local REST Servi
 </p>
 <p align="center">
 Instructions for starting the project:
+<br>
 -install all dependencies with:
 npm i
 -open terminal and run the http-server with:
