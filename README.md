@@ -14,6 +14,7 @@ Instructions for starting the project:
 -install all dependencies with:
 <br>
 npm i
+<br>
 -open terminal and run the http-server with:
 npm run start.
 </p>
