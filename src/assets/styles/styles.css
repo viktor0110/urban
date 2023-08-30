@@ -1,26 +1,11 @@
-@import url('./header.css');
-@import url('./footer.css');
-@import url('./content.css');
 @import url('./body.css');
-@import url('./contactPage.css');
+@import url('./header.css');
 @import url('./content.css');
+@import url('./footer.css');
 @import url('./galleryPage.css');
 @import url('./bookingPage.css');
+@import url('./contactPage.css');
+@import url('./uploadPage.css');
 @import url('./loginPage.css');
 @import url('./registerPage.css');
-@import url('./uploadPage.css');
-@import url('./mediaQueries.css');
-@font-face {
-    font-family: 'Marker' ;
-    src: url('../font/PermanentMarker-Regular.ttf');
-}
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-
-
-
+@import url('./responsive.css');

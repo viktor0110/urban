@@ -1,113 +1,75 @@
-header {
+@font-face {
+    font-family: 'Marker' ;
+    src: url('../font/PermanentMarker-Regular.ttf');
+}
+header{
     height: 15vh;
+    background-color: black;
+    font-family: 'Marker';
     position: sticky;
     top: 0;
     z-index: 100;
 }
-
-.nav-bar {
+.nav-logo{
+    display: inline-block;
+    width: 220px;
+    position: absolute;
+    margin-top: 0.2%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 45.4%;
+}
+.nav-logo img{
     width: 100%;
     height: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    justify-content: center;
-    align-items: center;
 }
-
-.nav-bar__main {
-    font-size: 27px;
-    letter-spacing: 4px;
-    font-family: 'Marker', cursive;
-    cursor: pointer;
+.nav-bar{
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    justify-content: center;
+    gap: 80px;
+    text-decoration: none;
+    list-style-type: none;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
-
-
-
-.nav-bar__main--left {
+.nav-link{
+    font-size: 28px;
+    margin-top: 3.3%;
+}
+.gallery{
+    margin-right: 7%;
+}
+.booking{
+    margin-left: 7%;
+}
+.hero{
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
-
-.nav-bar__main--right {
-    display: flex;
-    flex-direction: row;
     position: relative;
-    left: 120px;
-    gap: 40px;
-}
-
-.nav-bar__main--middle--logo--img {
-    width: 210px;
-    height: 155px;
-    object-fit: fill;
-}
-
-.nav-bar__main--middle--logo {
-    position: relative;
-    top: 20px;
-    left: 55px;
-}
-
-.nav-bar__end {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    top: 0px;
-    right: -750px;
-}
-
-.user-pic {
-    width: 50px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    cursor: pointer;
-    padding: 12px;
-    margin-right: 10px;
-}
-.user-pic:hover {
-    color: #f3d22d;
-    border: 2px solid #f3d22d;
+    flex-direction: column;
+    align-items:flex-end;
+    color: white;
 }
 .sub-menu-wrap{
+    position: absolute;
+    margin: 2.7% 0.5% 0 0 ;
     font-family: 'Marker', cursive;
     font-size: 20px;
     letter-spacing: 5px;
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 320px;
+    width: 15%;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.1s;
 }
 .sub-menu-wrap.open-menu{
-    max-height: 400px;
+    max-height: 30vh;
 }
 .sub-menu{
     border: white 2px solid;
     padding: 20px;
     margin: 10px;
-}
-.user-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.user-info h1{
-    font-weight: 500;
-}
-.user-info h1:hover{
-   color: #f3d22d;
 }
 .sub-menu hr {
     border: 0;
@@ -127,5 +89,25 @@ header {
 .sub-menu-link p{
     width: 100%;
 }
-
-
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-info h1{
+    font-weight: 500;
+}
+.user-info h1:hover{
+   color: #f3d22d;
+}
+.user-pic {
+    position: absolute;
+    font-size: 24px;
+    margin: 1% 1% 0 0;
+    width: 2%;
+    cursor: pointer;
+    padding: 12px;
+}
+.user-pic:hover {
+    color: #f3d22d;
+}
