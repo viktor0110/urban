@@ -64,7 +64,7 @@ export const layoutTemplate = (user, content) => html`
   </nav>
 </header>
 <main class="main" id="main">
-  <div class="main__content" id="content">${content}</div>
+  <div class="main" id="content">${content}</div>
 </main>
 <footer class="footer">
   <div class="links">

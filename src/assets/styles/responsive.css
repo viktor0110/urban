@@ -1,107 +1,60 @@
 @media screen and (max-width: 360px) {
-    main {
-        width: 360px;
-        position: relative;
-        top: 100px;
-        left: 120px;
+    .nav-logo{
+        width: 40vw;
+        left: 32%;
+    }
+    .user-pic{
+        font-size: 15px;
+        margin: 0% 2% 0 0;
+    }
+    .nav-bar{
+        margin-top: 35%;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+    .gallery {
+        margin-left: 0px;
+    }
+    .gallery {
+        margin-right: 0;
     }
     header{
-        position: relative;
-        top: 20px;
-        left: 140px;
-    }
-    .nav-bar__main--left{
-        font-size: 22px;
-        position: relative;
-        top: 150px;
-        left: 180px;
-    }
-    .nav-bar__main--right{
-        font-size: 22px;
-        position: relative;
-        top: 150px;
-        left: -75px;
-    }
-    .nav-bar__main--middle{
-        position: relative;
-        top: 0;
-        left: 15px;
-    }
-
-    .hero {
-        top: -46px;
-        left: -120px;
+        position: static;
     }
     .sub-menu-wrap{
-        width: 610px;
-        z-index: 101;
         background-color: black;
-        font-size: 40px;
+        overflow: hidden;
+        width: 100%;
+        z-index: 101;
+        margin-top: 9%;
     }
-    .footer{
-        position: relative;
-        top: 0px;
-        left: 150px;
-        margin-top: 120px;
+    .content{
+        text-align: center;
+        justify-content: center;
     }
-    #contactPage{
-        position: relative;
-        top: 0px;
-        left: 15px;
+    #homePage{
+        font-size: 12px;
     }
+    #galleryPage{
+        padding-left: 7%;
+    }
+    
 }
-@media screen and (max-width: 600px) and (min-width:360px){
+@media screen and (max-width: 600px) and (min-width: 360px){
     a{
-        color: red;
-    }
-    main {
-        width: 360px;
-        position: relative;
-        top: 100px;
-        left: 120px;
-    }
-    header{
-        position: relative;
-        top: 20px;
-        left: 140px;
-    }
-    .nav-bar__main--left{
-        font-size: 22px;
-        position: relative;
-        top: 150px;
-        left: 180px;
-    }
-    .nav-bar__main--right{
-        font-size: 22px;
-        position: relative;
-        top: 150px;
-        left: -75px;
-    }
-    .nav-bar__main--middle{
-        position: relative;
-        top: 0;
-        left: 15px;
-    }
-
-    .hero {
-        top: -46px;
-        left: -120px;
-    }
-    .sub-menu-wrap{
-        width: 610px;
-        z-index: 101;
-        background-color: black;
-        font-size: 40px;
-    }
-    .footer{
-        position: relative;
-        top: 0px;
-        left: 150px;
-        margin-top: 120px;
-    }
-    #contactPage{
-        position: relative;
-        top: 0px;
-        left: 15px;
-    }
+        color: blue;
+      }
+}
+@media screen and (max-width: 1024px) and (min-width: 600px){
+    a{
+        color: green;
+      }
+}
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+    a{
+        color: grey;
+      }
 }
