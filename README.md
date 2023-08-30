@@ -16,6 +16,7 @@ Instructions for starting the project:
 npm i
 <br>
 -open terminal and run the http-server with:
+<br>
 npm run start.
 </p>
 <p align="center">
