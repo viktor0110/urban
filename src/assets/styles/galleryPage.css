@@ -1,4 +1,4 @@
-#galleryPage{
+.galleryPage{
     font-family:'Roboto',sans-serif;
     max-width: 70%;
     padding-left: 800px;
@@ -42,4 +42,7 @@
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+.img-gallery>img{
+    border-radius: 20px;
 }

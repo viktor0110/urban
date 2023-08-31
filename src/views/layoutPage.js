@@ -64,20 +64,23 @@ export const layoutTemplate = (user, content) => html`
   </nav>
 </header>
 <main class="main" id="main">
-  <div class="main" id="content">${content}</div>
+  <div class="content" id="content">${content}</div>
 </main>
 <footer class="footer">
-  <div class="links">
-    <a class="links__instagram" href="https://www.instagram.com/urban.tattoo.sofia/"><i id="instagram"
-        class="fa-brands fa-instagram links__instagram--icon"></i></a>
-    <a class="links__facebook" href="https://www.facebook.com/urban.tattoo.sofia/"><i id="facebook"
-        class="fa-brands fa-square-facebook links__facebook--icon"></i></a>
-    <a class="links__google" href="https://g.page/r/CbxBJYKl-n-wEB0"><i id="google"
-        class="fa-brands fa-square-google-plus links__google--icon"></i></a>
+  <div class="links-footer">
+    <a class="instagram" href="https://www.instagram.com/urban.tattoo.sofia/">
+      <i class="fa-brands fa-instagram instagram-icon"></i>
+    </a>
+    <a class="facebook" href="https://www.facebook.com/urban.tattoo.sofia/">
+      <i class="fa-brands fa-square-facebook facebook-icon"></i>
+    </a>
+    <a class="google" href="https://g.page/r/CbxBJYKl-n-wEB0">
+      <i class="fa-brands fa-square-google-plus google-icon"></i>
+    </a>
   </div>
   <div class="copyright">
     © 2023 Copyright:
-    <a class="copyright__author" href="https://www.linkedin.com/in/viktor-stefanov-953047263/">Viktor Stefanov</a>
+    <a class="copyright-author" href="https://www.linkedin.com/in/viktor-stefanov-953047263/">Viktor Stefanov</a>
   </div>
 </footer>
 `;

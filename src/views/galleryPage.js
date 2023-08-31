@@ -6,7 +6,7 @@ export async function renderGalleryPage(ctx) {
 }
 
 const galleryTemplate = () => html`
-<section id="galleryPage">
+<section id="galleryPage" class="galleryPage">
     <div class="full-img" id="fullImgBox">
         <img src="../../src/assets/images/tattoos/1.jpg" alt="no-img" id="fullImg">
         <span @click=${closeFullImg}>X</span>

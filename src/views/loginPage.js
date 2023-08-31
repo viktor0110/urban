@@ -15,7 +15,7 @@ export async function renderLoginPage (ctx) {
 }
 
 const loginTemplate = (handler) => html`
-<section id="loginPage">
+<section id="loginPage" class="loginPage">
     <form @submit=${handler} class="loginForm">
         <div>
             <label for="email">Email:</label>

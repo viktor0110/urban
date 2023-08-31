@@ -18,7 +18,7 @@ export async function renderRegisterPage(ctx) {
 }
 
 const registerTemplate = (handler) => html`
-<section id="registerPage">
+<section id="registerPage" class="registerPage">
     <form @submit=${handler} class="registerForm">
         <div class="on-dark">
             <label for="email">Email:</label>

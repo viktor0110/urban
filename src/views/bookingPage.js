@@ -5,9 +5,9 @@ export async function renderBookingPage(ctx) {
 }
 
 const bookingTemplate = () => html`
-<section id="bookingPage">
+<section id="bookingPage" class="bookingPage">
 <h1 class="message">TO DO WHEN LEARN REACT</h1>
 <br>
-<img src="../../src/assets/images/calendarView.jpg" alt="">
+<img class="calendar" src="../../src/assets/images/calendarView.jpg" alt="no-img">
 </section>
 `;
