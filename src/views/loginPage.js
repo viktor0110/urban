@@ -27,7 +27,7 @@ const loginTemplate = (handler) => html`
             <input id="password" name="password" type="password" placeholder="********" value="">
         </div>
         <br>
-        <button class="btn" type="submit">Login</button>
+        <button class="btn" type="submit">Sign in</button>
         <br>
         <br>
         <br>
@@ -35,7 +35,7 @@ const loginTemplate = (handler) => html`
         <br>
         <br>
         <p class="field">
-            <span>If you don't have profile click <a class="reg-btn" href="/register">here</a></span>
+            <span>Sign up <a class="reg-btn" href="/register">here</a></span>
         </p>
     </form>
 </section>

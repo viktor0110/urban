@@ -31,10 +31,10 @@ export const layoutTemplate = (user, content) => html`
           </div>
           <hr>
           <a @click=${toggleMenu} href="/login" class="sub-menu-link">
-            <p>Login</p>
+            <p>Sign in</p>
           </a>
           <a @click=${toggleMenu} href="/register" class="sub-menu-link">
-            <p>Register</p>
+            <p>Sign up</p>
           </a>
         </div>
       </div>

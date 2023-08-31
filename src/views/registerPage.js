@@ -47,12 +47,12 @@ const registerTemplate = (handler) => html`
 
         <br>
         <br>
-        <button class="btn" type="submit">Register</button>
+        <button class="btn" type="submit">Sign up</button>
         <br>
         <br>
         <br>
         <p class="field">
-            <span>If you have profile click <a class="log-btn" href="/login">here</a></span>
+            <span>Sign in <a class="log-btn" href="/login">here</a></span>
         </p>
     </form>
 </section>

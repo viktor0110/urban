@@ -54,10 +54,10 @@ header{
 .sub-menu-wrap{
     position: absolute;
     margin: 2.7% 0.5% 0 0 ;
-    font-family: 'Marker', cursive;
+    font-family:'Roboto',sans-serif;
     font-size: 20px;
-    letter-spacing: 5px;
-    width: 15%;
+    
+    width: 8%;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.1s;
