@@ -4,3 +4,7 @@ main {
     font-family:'Roboto',sans-serif;
     padding-top: 80px;
 }
+.homePage{
+     padding-left: 2%;
+     text-align: justify;
+}
