@@ -7,10 +7,11 @@ export async function renderContactPage(ctx) {
 const contactTemplate = () => html`
 <section id="contactPage" class="contactPage">
     <div class="contact-info">
+        <span class="title-span"><title>Urban Tattoo Sofia</title></span>
         <span class="address-span">София, Студентски град,ул.Витали Таджер 12, бл.7A</span>
-        <span>+359 886 003 10</span>
-        <span>urbantattoobg@gmail.com</span>
-        <span class="hours-span" >Mon-Fri: <time>10:00 AM - 18:00 PM</time></span>
+        <span class="phone-span">+359 886 003 10</span>
+        <span class"email-span">urbantattoobg@gmail.com</span>
+        <span class="hours-span">Mon-Fri: <time>10:00 AM - 18:00 PM</time></span>
         <span class="map-span">
             <iframe class="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.496040125108!2d23.354057776124307!3d42.65084267116751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85dd073b761d%3A0xb07ffaa5822541bc!2sUrban%20Tattoo%20Sofia!5e0!3m2!1sbg!2sbg!4v1693149289937!5m2!1sbg!2sbg"

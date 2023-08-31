@@ -14,7 +14,7 @@ export const layoutTemplate = (user, content) => html`
             <h1>${user.username}</h1>
           </div>
           <hr>
-          <a href="/logout" class="sub-menu-link">
+          <a @click=${toggleMenu} href="/logout" class="sub-menu-link">
             <p>Logout</p>
           </a>
         </div>
@@ -30,10 +30,10 @@ export const layoutTemplate = (user, content) => html`
             <h1>Guest</h1>
           </div>
           <hr>
-          <a href="/login" class="sub-menu-link">
+          <a @click=${toggleMenu} href="/login" class="sub-menu-link">
             <p>Login</p>
           </a>
-          <a href="/register" class="sub-menu-link">
+          <a @click=${toggleMenu} href="/register" class="sub-menu-link">
             <p>Register</p>
           </a>
         </div>
@@ -85,5 +85,5 @@ export const layoutTemplate = (user, content) => html`
 </footer>
 `;
 
-
+//TODO WHEN CLICK REG OR LOGIN OR LOGOUT TO CLOSE MENU
 
