@@ -19,6 +19,3 @@ npm i
 <br>
 npm run start.
 </p>
-<p align="center">
-Application is NON-RESPONSIVE.Default screen-resolution is 2560x1080. 
-</p>
