@@ -800,9 +800,133 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
-    a {
-        color: grey;
+    header {
+        height: 15vh;
+        padding-bottom: 10%;
+        background-color: black;
+        font-family: 'Marker';
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        margin-left: 3%;
     }
+    .nav-logo {
+        display: inline-block;
+        width: 17vw;
+        position: absolute;
+        margin-top: 0.2%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        left: 41.4%;
+        z-index: 100;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 40%;
+        left: 32.5%;
+        gap: 5%;
+        background-color: black;
+    }
+    .user-pic{
+       font-size: 20px;
+       margin: 0.05% 2% 0 0;
+    }
+    
+    .sub-menu-wrap.open-menu {
+        background: black;
+        width: 20vw;
+        z-index: 100;
+    }
+    .sub-menu-wrap{
+        background: black;
+        width: 20vw;
+        z-index: 100;
+        margin-top: 3%;
+    }
+    .gallery{
+        margin-right: 30%;
+    }
+    .booking{
+        margin-left: 30%;
+    }
+    .content{
+        margin: 2% 10% 5% 15%;
+    }
+    .galleryPage {
+        max-width:unset;
+        padding-left: 0;
+        margin-right: 5%;
+    }
+    .img-gallery{
+        margin: 0 auto 50px;
+        gap: 50px 100px;
+    }
+    .img-gallery>img {
+        width: 30vw;
+    }
+
+    .homePage {
+        padding-left: 4%;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .uploadPage {
+        padding-top: 0;
+        margin-right: 7%;
+    }
+
+    .uploadPage>.uploadForm {
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bookingPage {
+        padding-top: 5%;
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    .bookingPage>.message {
+        font-size: 25px;
+        margin-left: 3%;
+    }
+
+    .bookingPage>.calendar {
+        margin-left: 5%;
+        width: 40vw;
+    }
+
+    .loginPage {
+        padding-left: 2%;
+        margin-top: 0;
+        margin-right: 5%;
+    }
+    
+
+    .loginForm {
+        width: unset;
+    }
+
+    .registerPage {
+        margin-top: 0;
+        margin-right: 4%;
+    }
+
+    .registerForm {
+        width: unset;
+    }
+
+    .contactPage {
+        margin-top: 0%;
+        padding: 0 0 2% 1%;
+    }
+    .footer{
+        margin-left: 1%;
+    }
+
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1201px) {
