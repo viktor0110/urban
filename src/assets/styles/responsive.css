@@ -1,587 +1,859 @@
 @media screen and (max-width: 360px) {
-    header{
+    header {
         position: static;
     }
-    .nav-logo{
+
+    .nav-logo {
         width: 40vw;
         left: 32%;
     }
-    .user-pic{
+
+    .user-pic {
         font-size: 15px;
         margin: 0% 3% 0 0;
     }
-    .nav-bar{
+
+    .nav-bar {
         margin-top: 35%;
         gap: 4%;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 15px;
     }
+
     .gallery {
         padding-left: 0%;
         margin-left: 0;
         margin-right: 0;
     }
-    .booking{
+
+    .booking {
         margin-left: 0;
     }
-    .sub-menu-wrap{
+
+    .sub-menu-wrap {
         background-color: black;
-        overflow:auto;
+        overflow: auto;
         width: 100vw;
         z-index: 105;
         margin-top: 9%;
     }
-    .main{
+
+    .main {
         max-width: 95%;
         padding: 10% 8% 10% 10%;
     }
-    .content{
+
+    .content {
         text-align: center;
         justify-content: center;
     }
-    .galleryPage{
+
+    .galleryPage {
         padding-left: 0;
     }
-    .img-gallery>img{
+
+    .img-gallery>img {
         width: 70vw;
     }
-    .homePage{
+
+    .homePage {
         margin-top: 35%;
         font-size: 12px;
     }
-    .uploadPage>.uploadForm{
+
+    .uploadPage>.uploadForm {
         margin-top: 20%;
         width: 100%;
         height: 100%;
     }
-    .bookingPage{
+
+    .bookingPage {
         margin-top: 30%;
     }
-    .bookingPage>.message{
+
+    .bookingPage>.message {
         font-size: 18px;
         margin-left: 10%;
     }
-    .bookingPage>.calendar{
+
+    .bookingPage>.calendar {
         margin-left: 5%;
         width: 70vw;
     }
-    .loginPage{
+
+    .loginPage {
         margin-top: 30%;
     }
-    .loginForm{
+
+    .loginForm {
         width: 100%;
     }
-    .registerPage{
+
+    .registerPage {
         margin-top: 30%;
     }
-    .registerForm{
+
+    .registerForm {
         width: 100%;
     }
-    
-    .contactPage{
+
+    .contactPage {
         margin-top: 35%;
         padding: 0 0 10% 5%;
     }
-    .address-span{
+
+    .address-span {
         width: 100vw;
         font-size: 16px;
     }
-    .hours-span{
+
+    .hours-span {
         width: 100vw;
         font-size: 16px;
     }
-    .map{
+
+    .map {
         width: 90vw;
         height: 50vh;
     }
-    .instagram-icon, .facebook-icon, .google-icon {
+
+    .instagram-icon,
+    .facebook-icon,
+    .google-icon {
         font-size: 25px;
     }
 }
-@media screen and (max-width: 480px) and (min-width: 361px){
-    header{
+
+@media screen and (max-width: 480px) and (min-width: 361px) {
+    header {
         position: static;
     }
-    .nav-logo{
+
+    .nav-logo {
         width: 30vw;
         left: 35%;
     }
-    .user-pic{
+
+    .user-pic {
         font-size: 15px;
         margin: 0% 3% 0 0;
     }
-    .nav-bar{
+
+    .nav-bar {
         margin-top: 25%;
         gap: 4%;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 15px;
     }
+
     .gallery {
         padding-left: 0%;
         margin-left: 0;
         margin-right: 0;
     }
-    .booking{
+
+    .booking {
         margin-left: 0;
     }
-    .sub-menu-wrap{
+
+    .sub-menu-wrap {
         background-color: black;
-        overflow:auto;
+        overflow: auto;
         width: 100vw;
         z-index: 105;
         margin-top: 9%;
     }
-    .main{
+
+    .main {
         max-width: 95%;
         padding: 10% 8% 10% 10%;
     }
-    .content{
+
+    .content {
         text-align: center;
         justify-content: center;
     }
-    .galleryPage{
+
+    .galleryPage {
         padding-top: 20%;
         padding-left: 0;
     }
-    .img-gallery>img{
+
+    .img-gallery>img {
         width: 70vw;
     }
-    .homePage{
+
+    .homePage {
         padding-left: 4%;
         margin-top: 20%;
         font-size: 12px;
     }
-    .uploadPage{
+
+    .uploadPage {
         padding-top: 20%;
     }
-    .uploadPage>.uploadForm{
+
+    .uploadPage>.uploadForm {
         padding-left: 20%;
         width: 100%;
         height: 100%;
     }
-    .bookingPage{
+
+    .bookingPage {
         padding-top: 10%;
         margin-top: 20%;
     }
-    .bookingPage>.message{
+
+    .bookingPage>.message {
         font-size: 18px;
         margin-left: 10%;
     }
-    .bookingPage>.calendar{
+
+    .bookingPage>.calendar {
         margin-left: 5%;
         width: 70vw;
     }
-    .loginPage{
+
+    .loginPage {
         padding-left: 5%;
         margin-top: 20%;
     }
-    .loginForm{
+
+    .loginForm {
         width: 100%;
     }
-    .registerPage{
+
+    .registerPage {
         padding-left: 5%;
         margin-top: 20%;
     }
-    .registerForm{
+
+    .registerForm {
         width: 100%;
     }
-    
-    .contactPage{
+
+    .contactPage {
         margin-top: 20%;
         padding: 0 0 10% 5%;
     }
-    .address-span{
+
+    .address-span {
         width: 100vw;
         font-size: 16px;
     }
-    .hours-span{
+
+    .hours-span {
         width: 100vw;
         font-size: 16px;
     }
-    .map{
+
+    .map {
         width: 90vw;
         height: 50vh;
     }
-    .instagram-icon, .facebook-icon, .google-icon {
+
+    .instagram-icon,
+    .facebook-icon,
+    .google-icon {
         font-size: 25px;
     }
 }
-@media screen and (max-width: 600px) and (min-width: 481px){
-    header{
+
+@media screen and (max-width: 600px) and (min-width: 481px) {
+    header {
         position: static;
     }
-    .nav-logo{
+
+    .nav-logo {
         width: 30vw;
         left: 34%;
     }
-    .user-pic{
+
+    .user-pic {
         font-size: 20px;
         margin: 0% 3% 0 0;
     }
-    .nav-bar{
+
+    .nav-bar {
         margin-top: 30%;
         gap: 4%;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 26px;
     }
+
     .gallery {
         padding-left: 0%;
         margin-left: 0;
         margin-right: 0;
     }
-    .booking{
+
+    .booking {
         margin-left: 0;
     }
-    .sub-menu-wrap{
+
+    .sub-menu-wrap {
         background-color: black;
-        overflow:auto;
+        overflow: auto;
         width: 100vw;
         z-index: 105;
         margin-top: 9%;
     }
-    .main{
+
+    .main {
         max-width: 95%;
         padding: 10% 8% 10% 10%;
     }
-    .content{
+
+    .content {
         text-align: center;
         justify-content: center;
     }
-    .galleryPage{
+
+    .galleryPage {
         padding: 20% 15% 0 0;
     }
-    .img-gallery>img{
+
+    .img-gallery>img {
         width: 70vw;
     }
-    .homePage{
+
+    .homePage {
         padding-left: 4%;
         margin-top: 35%;
         font-size: 12px;
     }
-    .uploadPage{
+
+    .uploadPage {
         padding-top: 30%;
     }
-    .uploadPage>.uploadForm{
+
+    .uploadPage>.uploadForm {
         padding-left: 15%;
         width: 100%;
         height: 100%;
     }
-    .bookingPage{
+
+    .bookingPage {
         padding-top: 10%;
         margin-top: 30%;
     }
-    .bookingPage>.message{
+
+    .bookingPage>.message {
         font-size: 18px;
         margin-left: 10%;
     }
-    .bookingPage>.calendar{
+
+    .bookingPage>.calendar {
         margin-left: 5%;
         width: 70vw;
     }
-    .loginPage{
+
+    .loginPage {
         padding-left: 5%;
         margin-top: 30%;
     }
-    .loginForm{
+
+    .loginForm {
         width: 100%;
     }
-    .registerPage{
+
+    .registerPage {
         padding-left: 5%;
         margin-top: 30%;
     }
-    .registerForm{
+
+    .registerForm {
         width: 100%;
     }
-    
-    .contactPage{
+
+    .contactPage {
         margin-top: 35%;
         padding: 0 0 10% 5%;
     }
-    .address-span{
+
+    .address-span {
         width: 100vw;
         font-size: 16px;
     }
-    .hours-span{
+
+    .hours-span {
         width: 100vw;
         font-size: 16px;
     }
-    .map{
+
+    .map {
         width: 90vw;
         height: 50vh;
     }
-    .instagram-icon, .facebook-icon, .google-icon {
+
+    .instagram-icon,
+    .facebook-icon,
+    .google-icon {
         font-size: 35px;
     }
 }
-@media screen and (max-width: 768px) and (min-width: 601px){
-    header{
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    header {
         position: static;
     }
-    .nav-logo{
+
+    .nav-logo {
         width: 35vw;
         left: 32%;
     }
-    .user-pic{
+
+    .user-pic {
         font-size: 25px;
         margin: 0% 3% 0 0;
     }
-    .nav-bar{
+
+    .nav-bar {
         margin-top: 30%;
         gap: 4%;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 35px;
     }
+
     .gallery {
         padding-left: 0%;
         margin-left: 0;
         margin-right: 0;
     }
-    .booking{
+
+    .booking {
         margin-left: 0;
     }
-    .sub-menu-wrap{
+
+    .sub-menu-wrap {
         background-color: black;
-        overflow:auto;
+        overflow: auto;
         width: 100vw;
         z-index: 105;
         margin-top: 5%;
     }
-    .main{
+
+    .main {
         max-width: 95%;
         padding: 10% 8% 10% 10%;
     }
-    .content{
+
+    .content {
         text-align: center;
         justify-content: center;
     }
-    .galleryPage{
+
+    .galleryPage {
         padding: 20% 15% 0 0;
     }
-    .img-gallery>img{
+
+    .img-gallery>img {
         width: 70vw;
     }
-    .homePage{
+
+    .homePage {
         padding-left: 4%;
         margin-top: 35%;
         font-size: 20px;
     }
-    .uploadPage{
+
+    .uploadPage {
         padding-top: 30%;
     }
-    .uploadPage>.uploadForm{
+
+    .uploadPage>.uploadForm {
         padding-left: 15%;
         width: 100%;
         height: 100%;
     }
-    .bookingPage{
+
+    .bookingPage {
         padding-top: 10%;
         margin-top: 30%;
     }
-    .bookingPage>.message{
+
+    .bookingPage>.message {
         font-size: 18px;
         margin-left: 10%;
     }
-    .bookingPage>.calendar{
+
+    .bookingPage>.calendar {
         margin-left: 5%;
         width: 70vw;
     }
-    .loginPage{
+
+    .loginPage {
         padding-left: 5%;
         margin-top: 30%;
     }
-    .loginForm{
+
+    .loginForm {
         width: 100%;
     }
-    .registerPage{
+
+    .registerPage {
         padding-left: 5%;
         margin-top: 30%;
     }
-    .registerForm{
+
+    .registerForm {
         width: 100%;
     }
-    
-    .contactPage{
+
+    .contactPage {
         margin-top: 35%;
         padding: 0 0 10% 5%;
     }
-    .address-span{
+
+    .address-span {
         width: 100vw;
         font-size: 16px;
     }
-    .hours-span{
+
+    .hours-span {
         width: 100vw;
         font-size: 16px;
     }
-    .map{
+
+    .map {
         width: 90vw;
         height: 50vh;
     }
-    .instagram-icon, .facebook-icon, .google-icon {
+
+    .instagram-icon,
+    .facebook-icon,
+    .google-icon {
         font-size: 35px;
     }
 }
-@media screen and (max-width: 900px) and (min-width: 769px){
-    header{
+
+@media screen and (max-width: 900px) and (min-width: 769px) {
+    header {
         position: static;
     }
-    .nav-logo{
+
+    .nav-logo {
         width: 35vw;
         left: 32%;
     }
-    .user-pic{
+
+    .user-pic {
         font-size: 25px;
         margin: 0% 3% 0 0;
     }
-    .nav-bar{
+
+    .nav-bar {
         margin-top: 30%;
         gap: 4%;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 40px;
     }
+
     .gallery {
         padding-left: 0%;
         margin-left: 0;
         margin-right: 0;
     }
-    .booking{
+
+    .booking {
         margin-left: 0;
     }
-    .sub-menu-wrap{
+
+    .sub-menu-wrap {
         background-color: black;
-        overflow:auto;
+        overflow: auto;
         width: 100vw;
         z-index: 105;
         margin-top: 5%;
     }
-    .main{
+
+    .main {
         max-width: 95%;
         padding: 10% 8% 10% 10%;
     }
-    .content{
+
+    .content {
         text-align: center;
         justify-content: center;
     }
-    .galleryPage{
+
+    .galleryPage {
         padding: 30% 15% 0 0;
     }
-    .img-gallery>img{
+
+    .img-gallery>img {
         width: 70vw;
     }
-    .homePage{
+
+    .homePage {
         padding-left: 4%;
         margin-top: 45%;
         font-size: 20px;
     }
-    .uploadPage{
+
+    .uploadPage {
         padding-top: 30%;
     }
-    .uploadPage>.uploadForm{
+
+    .uploadPage>.uploadForm {
         padding-left: 10%;
         width: 100%;
         height: 100%;
     }
-    .bookingPage{
+
+    .bookingPage {
         padding-top: 10%;
         margin-top: 40%;
     }
-    .bookingPage>.message{
+
+    .bookingPage>.message {
         font-size: 25px;
         margin-left: 3%;
     }
-    .bookingPage>.calendar{
+
+    .bookingPage>.calendar {
         margin-left: 5%;
         width: 70vw;
     }
-    .loginPage{
+
+    .loginPage {
         padding-left: 2%;
         margin-top: 40%;
     }
-    .loginForm{
+
+    .loginForm {
         width: 100%;
     }
-    .registerPage{
+
+    .registerPage {
         padding-left: 2%;
         margin-top: 40%;
     }
-    .registerForm{
+
+    .registerForm {
         width: 100%;
     }
-    
-    .contactPage{
+
+    .contactPage {
         margin-top: 40%;
         padding: 0 0 10% 5%;
     }
-    .address-span{
+
+    .address-span {
         width: 100vw;
         font-size: 16px;
     }
-    .hours-span{
+
+    .hours-span {
         width: 100vw;
         font-size: 16px;
     }
-    .map{
+
+    .map {
         width: 90vw;
         height: 50vh;
     }
-    .instagram-icon, .facebook-icon, .google-icon {
+
+    .instagram-icon,
+    .facebook-icon,
+    .google-icon {
         font-size: 35px;
     }
 }
-@media screen and (max-width: 1024px) and (min-width: 901px){
-    a{
-        color: grey;
-      }
-}
-@media screen and (max-width: 1200px) and (min-width: 1025px){
-    a{
-        color: grey;
-      }
-}
-@media screen and (max-width: 1440px) and (min-width: 1201px){
-    a{
-        color: grey;
-      }
-}
-@media screen and (max-width: 1600px) and (min-width: 1441px){
-    a{
-        color: grey;
-      }
-}
-@media screen and (max-width: 1920px) and (min-width: 1601px){
-    a{
-        color: grey;
-      }
-}
-@media screen and (max-width: 2560px) and (min-width: 1921px){
-    .content{
-       padding: 2% 0 2% 15%;
+
+@media screen and (max-width: 1024px) and (min-width: 901px) {
+    header {
+        height: 15vh;
+        padding-bottom: 10%;
+        background-color: black;
+        font-family: 'Marker';
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        margin-left: 3%;
     }
-    .galleryPage{
+    .nav-logo {
+        display: inline-block;
+        width: 17vw;
+        position: absolute;
+        margin-top: 0.2%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        left: 41.4%;
+        z-index: 100;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 30%;
+        left: 29.5%;
+        gap: 5%;
+        background-color: black;
+    }
+    .user-pic{
+       font-size: 20px;
+       margin: 0.05% 2% 0 0;
+    }
+    
+    .sub-menu-wrap.open-menu {
+        background: black;
+        width: 20vw;
+        z-index: 100;
+    }
+    .sub-menu-wrap{
+        background: black;
+        width: 20vw;
+        z-index: 100;
+        margin-top: 3%;
+    }
+    .gallery{
+        margin-right: 26%;
+    }
+    .booking{
+        margin-left: 26%;
+    }
+    .content{
+        margin: 2% 10% 5% 15%;
+    }
+    .galleryPage {
+        max-width:unset;
+        padding-left: 0;
+    }
+    .img-gallery{
+        margin: 5% auto 50px;
+    }
+    .img-gallery>img {
+        width: 30vw;
+    }
+
+    .homePage {
+        padding-left: 4%;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .uploadPage {
+        padding-top: 0;
+        margin-right: 7%;
+    }
+
+    .uploadPage>.uploadForm {
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bookingPage {
+        padding-top: 5%;
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    .bookingPage>.message {
+        font-size: 25px;
+        margin-left: 3%;
+    }
+
+    .bookingPage>.calendar {
+        margin-left: 5%;
+        width: 50vw;
+    }
+
+    .loginPage {
+        padding-left: 2%;
+        margin-top: 0;
+        margin-right: 5%;
+    }
+    
+
+    .loginForm {
+        width: 100%;
+    }
+
+    .registerPage {
+        margin-top: 0;
+        margin-right: 4%;
+    }
+
+    .registerForm {
+        width: 100%;
+    }
+
+    .contactPage {
+        margin-top: 0%;
+        padding: 0 0 2% 1%;
+    }
+    .footer{
+        margin-left: 1%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    a {
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1201px) {
+    a {
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+    a {
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+    a {
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+    .content {
+        padding: 2% 0 2% 15%;
+    }
+
+    .galleryPage {
         padding: 0 0 2% 13%;
         margin-top: 0;
     }
-    .bookingPage{
+
+    .bookingPage {
         margin-right: 18%;
         padding: 0% 0 2% 0;
     }
-    .contactPage{
+
+    .contactPage {
         margin-right: 18%;
         padding: 0% 0 2% 0;
     }
-    .uploadPage{
+
+    .uploadPage {
         margin-right: 18%;
         padding: 0% 0 2% 0;
     }
-    .registerPage{
+
+    .registerPage {
         margin-right: 18%;
         padding: 0% 0 2% 0;
     }
-    .loginPage{
+
+    .loginPage {
         margin-right: 18%;
         padding: 0% 0 2% 0;
     }
