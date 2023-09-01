@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-Simple Single Page Application with client side rendering.Using Local REST Service. 
+Simple Single Page Application with client side rendering and fully responsive design.Using Local REST Service. 
 <br>
 Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
 </p>
