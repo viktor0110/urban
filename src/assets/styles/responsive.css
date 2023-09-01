@@ -104,15 +104,15 @@
         position: static;
     }
     .nav-logo{
-        width: 40vw;
-        left: 32%;
+        width: 30vw;
+        left: 35%;
     }
     .user-pic{
         font-size: 15px;
         margin: 0% 3% 0 0;
     }
     .nav-bar{
-        margin-top: 35%;
+        margin-top: 25%;
         gap: 4%;
     }
     .nav-link{
@@ -150,11 +150,11 @@
     }
     .homePage{
         padding-left: 4%;
-        margin-top: 35%;
+        margin-top: 20%;
         font-size: 12px;
     }
     .uploadPage{
-        padding-top: 30%;
+        padding-top: 20%;
     }
     .uploadPage>.uploadForm{
         padding-left: 20%;
@@ -163,7 +163,7 @@
     }
     .bookingPage{
         padding-top: 10%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .bookingPage>.message{
         font-size: 18px;
@@ -175,21 +175,21 @@
     }
     .loginPage{
         padding-left: 5%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .loginForm{
         width: 100%;
     }
     .registerPage{
         padding-left: 5%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .registerForm{
         width: 100%;
     }
     
     .contactPage{
-        margin-top: 35%;
+        margin-top: 20%;
         padding: 0 0 10% 5%;
     }
     .address-span{
@@ -213,19 +213,19 @@
         position: static;
     }
     .nav-logo{
-        width: 40vw;
-        left: 32%;
+        width: 30vw;
+        left: 34%;
     }
     .user-pic{
-        font-size: 15px;
+        font-size: 20px;
         margin: 0% 3% 0 0;
     }
     .nav-bar{
-        margin-top: 35%;
+        margin-top: 30%;
         gap: 4%;
     }
     .nav-link{
-        font-size: 15px;
+        font-size: 26px;
     }
     .gallery {
         padding-left: 0%;
@@ -251,8 +251,7 @@
         justify-content: center;
     }
     .galleryPage{
-        padding-top: 20%;
-        padding-left: 0;
+        padding: 20% 15% 0 0;
     }
     .img-gallery>img{
         width: 70vw;
@@ -266,7 +265,7 @@
         padding-top: 30%;
     }
     .uploadPage>.uploadForm{
-        padding-left: 20%;
+        padding-left: 15%;
         width: 100%;
         height: 100%;
     }
@@ -314,18 +313,224 @@
         height: 50vh;
     }
     .instagram-icon, .facebook-icon, .google-icon {
-        font-size: 25px;
+        font-size: 35px;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 601px){
-    a{
-        color: grey;
-      }
+    header{
+        position: static;
+    }
+    .nav-logo{
+        width: 35vw;
+        left: 32%;
+    }
+    .user-pic{
+        font-size: 25px;
+        margin: 0% 3% 0 0;
+    }
+    .nav-bar{
+        margin-top: 30%;
+        gap: 4%;
+    }
+    .nav-link{
+        font-size: 35px;
+    }
+    .gallery {
+        padding-left: 0%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .booking{
+        margin-left: 0;
+    }
+    .sub-menu-wrap{
+        background-color: black;
+        overflow:auto;
+        width: 100vw;
+        z-index: 105;
+        margin-top: 5%;
+    }
+    .main{
+        max-width: 95%;
+        padding: 10% 8% 10% 10%;
+    }
+    .content{
+        text-align: center;
+        justify-content: center;
+    }
+    .galleryPage{
+        padding: 20% 15% 0 0;
+    }
+    .img-gallery>img{
+        width: 70vw;
+    }
+    .homePage{
+        padding-left: 4%;
+        margin-top: 35%;
+        font-size: 20px;
+    }
+    .uploadPage{
+        padding-top: 30%;
+    }
+    .uploadPage>.uploadForm{
+        padding-left: 15%;
+        width: 100%;
+        height: 100%;
+    }
+    .bookingPage{
+        padding-top: 10%;
+        margin-top: 30%;
+    }
+    .bookingPage>.message{
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    .bookingPage>.calendar{
+        margin-left: 5%;
+        width: 70vw;
+    }
+    .loginPage{
+        padding-left: 5%;
+        margin-top: 30%;
+    }
+    .loginForm{
+        width: 100%;
+    }
+    .registerPage{
+        padding-left: 5%;
+        margin-top: 30%;
+    }
+    .registerForm{
+        width: 100%;
+    }
+    
+    .contactPage{
+        margin-top: 35%;
+        padding: 0 0 10% 5%;
+    }
+    .address-span{
+        width: 100vw;
+        font-size: 16px;
+    }
+    .hours-span{
+        width: 100vw;
+        font-size: 16px;
+    }
+    .map{
+        width: 90vw;
+        height: 50vh;
+    }
+    .instagram-icon, .facebook-icon, .google-icon {
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 900px) and (min-width: 769px){
-    a{
-        color: grey;
-      }
+    header{
+        position: static;
+    }
+    .nav-logo{
+        width: 35vw;
+        left: 32%;
+    }
+    .user-pic{
+        font-size: 25px;
+        margin: 0% 3% 0 0;
+    }
+    .nav-bar{
+        margin-top: 30%;
+        gap: 4%;
+    }
+    .nav-link{
+        font-size: 40px;
+    }
+    .gallery {
+        padding-left: 0%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .booking{
+        margin-left: 0;
+    }
+    .sub-menu-wrap{
+        background-color: black;
+        overflow:auto;
+        width: 100vw;
+        z-index: 105;
+        margin-top: 5%;
+    }
+    .main{
+        max-width: 95%;
+        padding: 10% 8% 10% 10%;
+    }
+    .content{
+        text-align: center;
+        justify-content: center;
+    }
+    .galleryPage{
+        padding: 30% 15% 0 0;
+    }
+    .img-gallery>img{
+        width: 70vw;
+    }
+    .homePage{
+        padding-left: 4%;
+        margin-top: 45%;
+        font-size: 20px;
+    }
+    .uploadPage{
+        padding-top: 30%;
+    }
+    .uploadPage>.uploadForm{
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+    .bookingPage{
+        padding-top: 10%;
+        margin-top: 40%;
+    }
+    .bookingPage>.message{
+        font-size: 25px;
+        margin-left: 3%;
+    }
+    .bookingPage>.calendar{
+        margin-left: 5%;
+        width: 70vw;
+    }
+    .loginPage{
+        padding-left: 2%;
+        margin-top: 40%;
+    }
+    .loginForm{
+        width: 100%;
+    }
+    .registerPage{
+        padding-left: 2%;
+        margin-top: 40%;
+    }
+    .registerForm{
+        width: 100%;
+    }
+    
+    .contactPage{
+        margin-top: 40%;
+        padding: 0 0 10% 5%;
+    }
+    .address-span{
+        width: 100vw;
+        font-size: 16px;
+    }
+    .hours-span{
+        width: 100vw;
+        font-size: 16px;
+    }
+    .map{
+        width: 90vw;
+        height: 50vh;
+    }
+    .instagram-icon, .facebook-icon, .google-icon {
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 1024px) and (min-width: 901px){
     a{
@@ -353,7 +558,31 @@
       }
 }
 @media screen and (max-width: 2560px) and (min-width: 1921px){
-    a{
-        
-      }
+    .content{
+       padding: 2% 0 2% 15%;
+    }
+    .galleryPage{
+        padding: 0 0 2% 13%;
+        margin-top: 0;
+    }
+    .bookingPage{
+        margin-right: 18%;
+        padding: 0% 0 2% 0;
+    }
+    .contactPage{
+        margin-right: 18%;
+        padding: 0% 0 2% 0;
+    }
+    .uploadPage{
+        margin-right: 18%;
+        padding: 0% 0 2% 0;
+    }
+    .registerPage{
+        margin-right: 18%;
+        padding: 0% 0 2% 0;
+    }
+    .loginPage{
+        margin-right: 18%;
+        padding: 0% 0 2% 0;
+    }
 }
