@@ -8,14 +8,3 @@ Simple Single Page Application with client side rendering and fully responsive d
 <br>
 Dependencies: LIT-HTML, PAGE, HTTP-SERVER, BCRYPT, COOKIE-PARSER, JSONWEBTOKEN, MONGOOSE, NODEMON.
 </p>
-<p align="center">
-Instructions for starting the project:
-<br>
--install all dependencies with:
-<br>
-npm i
-<br>
--open terminal and run the http-server with:
-<br>
-npm run start.
-</p>
