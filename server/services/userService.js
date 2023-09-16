@@ -4,21 +4,28 @@ const jwt = require('jsonwebtoken');
 
 const secret = 'm0sTD@ng3rouSPa$$worD1995';
 
-async function register(username, password) {
+async function register(email, password, fullName, phone) {
     const existing = await User.findOne( { email }).collation( { locale: 'en', strength: 2 });
-
+    
     if(existing) {
         throw new Error('Email already used !')
     }
-
+    
+    
     const user = await User.create({
         email,
-        hashedPassword: await bcrypt.hash(password, 10)
+        hashedPassword: await bcrypt.hash(password, 10),
+        fullName,
+        phone
     }); 
+    
 
     return {
         _id: user._id,
-        username: user.username,
+        email: user.email,
+        fullName,
+        phone,
+        _role: user.roles[0],
         accessToken: createToken(user)
     };
 };

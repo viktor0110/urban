@@ -11,7 +11,7 @@ export const layoutTemplate = (user, content) => html`
       <div class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
           <div class="user-info">
-            <h1>${user.username}</h1>
+            <h4>${user.email}</h4>
           </div>
           <hr>
           <a @click=${toggleMenu} href="/logout" class="sub-menu-link">
@@ -52,7 +52,7 @@ export const layoutTemplate = (user, content) => html`
       <li class="nav-link booking">
         <a href="/booking">BOOKING</a>
       </li>
-      ${user && user.username == 'admin' ? html`
+      ${user && user._role == 'admin' ? html`
       <li class="nav-link">
         <a href="/upload">UPLOAD</a>
       </li>`

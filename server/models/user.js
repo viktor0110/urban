@@ -1,13 +1,14 @@
 const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema({
-    username: { type: String, required: true, minlength: 3, unique: true  },
+    email: { type: String, required: true, minlength: 3, unique: true  },
     hashedPassword: { type: String, required: true },
+    fullName: { type: String, required: true },
+    phone: { type: Number, required: true },
     roles: { type: [{ type: String, enum: ['user', 'admin'] }], default: ['user'] }
-    
 });
 
-userSchema.index({ username: 1 }, {
+userSchema.index({ email: 1 }, {
     unique: true,
     collation: {
         locale: 'en',

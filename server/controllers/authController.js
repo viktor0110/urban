@@ -3,10 +3,8 @@ const { register } = require('../services/userService');
 const authController = require('express').Router();
 
 authController.post('/register', async (req, res) => {
-
     try {
-
-       const token = await register(req.body.username, req.body.password);
+        const token = await register(req.body.email, req.body.password, req.body.fullName, req.body.phone);
        res.json(token);
     } catch(error) {
         res.status(400).json({

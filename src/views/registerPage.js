@@ -1,19 +1,20 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
+import { register } from '../data/auth.js';
 import { createSubmitHandler } from '../services/data.js';
 
 export async function renderRegisterPage(ctx) {
     ctx.render(registerTemplate(createSubmitHandler(onRegister)));
 
     async function onRegister(data) {
-        // if(!data.email || !data.password || !data.repeatPassword) {
-        //     return alert('All fields are required');
-        // }
-        // if(data.password !== data.repeatPassword) {
-        //     return alert('Passwords do not match');
-        // }
+        if(!data.email || !data.password || !data.repeatPassword) {
+            return alert('All fields are required');
+        }
+        if(data.password !== data.repeatPassword) {
+            return alert('Passwords do not match');
+        }
 
-        // await register(data.email, data.password);
-        // ctx.page.redirect('/')
+        await register(data.email, data.password, data.name, data.phone);
+        ctx.page.redirect('/')
     }
 }
 

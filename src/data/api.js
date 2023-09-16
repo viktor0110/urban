@@ -1,4 +1,4 @@
-import { clearUser, getUser } from '../util.js';
+import { clearUser, getUser } from '../services/util.js';
 
 const host = 'http://localhost:5000';
 
