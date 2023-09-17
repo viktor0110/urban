@@ -3,6 +3,7 @@ import { register } from '../data/auth.js';
 import { createSubmitHandler } from '../services/data.js';
 
 export async function renderRegisterPage(ctx) {
+    
     ctx.render(registerTemplate(createSubmitHandler(onRegister)));
 
     async function onRegister(data) {
