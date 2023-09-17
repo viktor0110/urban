@@ -1,8 +1,10 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { createSubmitHandler } from '../services/data.js';
 import { login } from '../data/auth.js';
+import { checkUser } from '../services/util.js';
 
 export async function renderLoginPage (ctx) {
+    checkUser(ctx);
     ctx.render(loginTemplate(createSubmitHandler(onLogin)));
 
     async function onLogin (data) {

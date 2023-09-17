@@ -1,9 +1,10 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { register } from '../data/auth.js';
 import { createSubmitHandler } from '../services/data.js';
+import { checkUser } from '../services/util.js';
 
 export async function renderRegisterPage(ctx) {
-    
+    checkUser(ctx);
     ctx.render(registerTemplate(createSubmitHandler(onRegister)));
 
     async function onRegister(data) {

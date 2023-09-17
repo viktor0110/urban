@@ -22,4 +22,10 @@ export function createSubmitHandler(callback) {
 
     callback(data, form);
   };
+};
+
+export function checkUser(ctx) {
+  if(ctx.user) {
+    ctx.page.redirect('/');
 }
+};
