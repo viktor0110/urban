@@ -29,6 +29,6 @@ export async function register(email, password, fullName, phone) {
 }
 
 export async function logout() {
-  // await get(endpoints.logout);
+ await get(endpoints.logout);
   clearUser();
 }

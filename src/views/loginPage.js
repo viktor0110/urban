@@ -1,16 +1,17 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { createSubmitHandler } from '../services/data.js';
+import { login } from '../data/auth.js';
 
 export async function renderLoginPage (ctx) {
     ctx.render(loginTemplate(createSubmitHandler(onLogin)));
 
     async function onLogin (data) {
-        // if(!data.email || !data.password) {
-        //     return alert('All fields are required');
-        // }
+        if(!data.email || !data.password) {
+            return alert('All fields are required');
+        }
 
-        // await login(data.email, data.password);
-        // ctx.page.redirect('/')
+        await login(data.email, data.password);
+        ctx.page.redirect('/')
     };
 }
 

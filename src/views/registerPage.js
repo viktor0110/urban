@@ -6,13 +6,12 @@ export async function renderRegisterPage(ctx) {
     ctx.render(registerTemplate(createSubmitHandler(onRegister)));
 
     async function onRegister(data) {
-        if(!data.email || !data.password || !data.repeatPassword) {
+        if(!data.email || !data.password || !data.repeatPassword || !data.name || !data.phone) {
             return alert('All fields are required');
         }
         if(data.password !== data.repeatPassword) {
             return alert('Passwords do not match');
         }
-
         await register(data.email, data.password, data.name, data.phone);
         ctx.page.redirect('/')
     }

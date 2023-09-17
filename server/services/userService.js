@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const secret = 'm0sTD@ng3rouSPa$$worD1995';
+const tokenBlackList = new Set();
 
 async function register(email, password, fullName, phone) {
     const existing = await User.findOne( { email }).collation( { locale: 'en', strength: 2 });
@@ -20,14 +21,7 @@ async function register(email, password, fullName, phone) {
     }); 
     
 
-    return {
-        _id: user._id,
-        email: user.email,
-        fullName,
-        phone,
-        _role: user.roles[0],
-        accessToken: createToken(user)
-    };
+    return createToken(user);
 };
 
 async function login(email, password) {
@@ -41,23 +35,34 @@ async function login(email, password) {
 
    if(!match) {
     throw new Error('Incorrect email or password');
-   }
-    
+   };
+
+   return createToken(user); 
 };
 
-async function logout() {
-    
+async function logout(token) {
+    tokenBlackList.add(token);
 };
 
 function createToken(user) {
     const payload = {
         _id: user._id,
-        username: user.username
+        email: user.email
     };
 
-    const token = jwt.sign(payload, secret);
-    return token;
+    return {
+        _id: user._id,
+        email: user.email,
+        fullName: user.fullName,
+        phone: user.phone,
+        _role: user.roles[0],
+        accessToken: jwt.sign(payload, secret)
+    } 
 };
+
+function parseToken() {
+    //todo scan blacklist for token;
+}
 
 module.exports = {
     register, 
