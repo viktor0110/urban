@@ -8,4 +8,4 @@ export function createSubmitHandler(callback) {
   
       callback(data, form);
     };
-  }
+  };

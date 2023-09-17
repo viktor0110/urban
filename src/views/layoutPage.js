@@ -27,7 +27,7 @@ export const layoutTemplate = (user, content) => html`
       <div class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
           <div class="user-info">
-            <h1>Guest</h1>
+            <h4>Guest</h4>
           </div>
           <hr>
           <a @click=${toggleMenu} href="/login" class="sub-menu-link">

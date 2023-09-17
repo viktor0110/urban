@@ -2,6 +2,7 @@ import { del, get, post, put } from './api.js';
 
 const endpoints = {
   tattoos: '/data/tattoos',
+  upload: '/data/upload'
 };
 
 export async function getTattoos() {
@@ -9,9 +10,8 @@ export async function getTattoos() {
 }
 
 export async function createTattoo(data) {
-  return await post(endpoints.tattoos, {
-    imageUrl: data.imageUrl,
-  });
+  return await post(endpoints.upload, {
+    data });
 }
 
 export async function getTattooById(id) {

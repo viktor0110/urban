@@ -5,7 +5,7 @@ const dataController = require("../controllers/dataController");
 
 module.exports = (app) => {
     app.use('/users', authController);
-    app.use('/data/tattoos', dataController);
+    app.use('/data', dataController);
  
     // app.all('*', defaultController);
 }
