@@ -29,3 +29,9 @@ export function checkUser(ctx) {
     ctx.page.redirect('/');
 }
 };
+
+export function checkAdmin(ctx) {
+  if(!ctx.user || ctx.user._role != 'admin') {
+    ctx.page.redirect('/');
+}
+};

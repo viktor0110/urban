@@ -1,8 +1,10 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { createTattoo } from '../data/endpoints.js';
 import { createSubmitHandler } from '../services/data.js';
+import { checkAdmin } from '../services/util.js';
 
 export async function renderUploadPage(ctx) {
+        checkAdmin(ctx);
 
         ctx.render(uploadTemplate(createSubmitHandler(onUpload)));
   

@@ -9,6 +9,17 @@ function hasUser() {
     } 
 }
 
+function isAdmin() {
+    return (req, res, next) => {
+        if(req.isAdmin && req.isAdmin == 'admin') {
+            next();
+        }else {
+            res.status(401).json({ message: 'You don`t have access to do that!'});
+        }
+        
+    } 
+}
+
 function isGuest() {
     return (req, res, next) => {
         if(req.user) {
@@ -21,5 +32,6 @@ function isGuest() {
 
 module.exports = {
     hasUser,
-    isGuest
+    isGuest,
+    isAdmin,
 }

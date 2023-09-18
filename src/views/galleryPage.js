@@ -27,7 +27,7 @@ const galleryTemplate = (tattoos, user, deleteHandler) => html`
         <span @click=${closeFullImg}>X</span>
         ${user && user._role == 'admin' ? html`
             <span @click=${deleteHandler} class="delete">Delete</span>` 
-        : nothing}
+        : nothing }
     </div>
     <div class="img-gallery">
     

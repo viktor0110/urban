@@ -8,6 +8,7 @@ module.exports = () => (req, res, next) => {
             const payload = parseToken(token);
             req.user = payload;
             req.token = token;
+            req.isAdmin = req.headers['isadmin'];
         } catch(error) {
             return res.status(401).json({ message: 'Invalid authorization token'});
         }
