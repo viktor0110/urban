@@ -2,7 +2,7 @@ import { del, get, post, put } from './api.js';
 
 const endpoints = {
   tattoos: '/data/tattoos',
-  upload: '/data/upload'
+  upload: '/data/upload',
 };
 
 export async function getTattoos() {

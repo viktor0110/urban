@@ -1,6 +1,5 @@
-
-
 export function closeFullImg(e) {
+  console.log(e.currentTarget.parentElement);
     e.currentTarget.parentElement.style.display = "none";
   }
   
@@ -9,8 +8,7 @@ export function closeFullImg(e) {
     const fullImg = e.target.parentElement.previousElementSibling.firstElementChild;
 
     const imgPath = e.currentTarget.src;
-  
     fullImgBox.style.display = "flex";
     fullImg.src = imgPath;
+    fullImg['data-id'] = e.currentTarget.attributes["data-id"].value;
   }
-

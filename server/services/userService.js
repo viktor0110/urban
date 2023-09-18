@@ -60,12 +60,17 @@ function createToken(user) {
     } 
 };
 
-function parseToken() {
-    //todo scan blacklist for token;
+function parseToken(token) {
+    if(tokenBlackList.has(token)) {
+        throw new Error('Token is blacklisted !');
+    } 
+
+    return jwt.verify(token, secret);
 }
 
 module.exports = {
     register, 
     login,
-    logout
+    logout,
+    parseToken,
 }
