@@ -7,7 +7,6 @@ export async function renderHomePage(ctx) {
 const homeTemplate = () => html`
 <section id="homePage" class="homePage">
 <div class="message">
-    <h2>Meet our tattoo artists</h2>
     <p>We specialize in many different tattoo genres while keeping traditional tattooing roots.We are always looking to break boundaries to provide you with a truly unique piece.We prefer working with our clients and collaborate on new ideas, or adding to existing ones, to achieve a finished product that leaves everyone satisfied.Our greatest reward is to leave you feeling proud with your new tattoo.</p>
 </div>
 <div class="artists" id="artists">
