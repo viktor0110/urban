@@ -4,6 +4,9 @@
     margin-top: 10%;
     margin-right: 21%;
 }
+.nav-logo {
+    left: 45%;
+}
 .defaultPage>h1 {
     color: #f3d22d;
     text-align: center;

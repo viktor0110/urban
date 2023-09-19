@@ -10,7 +10,9 @@ import { renderUploadPage } from '../views/uploadPage.js';
 import { renderDefaultPage } from '../views/defaultPage.js';
 
 export function app(page) {
+
     page(decorateContext);
+
     page('/index.html', '/');
     page('/', renderHomePage);
     page('/login', renderLoginPage);
@@ -20,6 +22,7 @@ export function app(page) {
     page('/gallery', renderGalleryPage);
     page('/booking', renderBookingPage);
     page('/upload', renderUploadPage);
+    
     page('*', renderDefaultPage);
 
     page.start();
