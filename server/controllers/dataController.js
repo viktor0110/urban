@@ -26,19 +26,19 @@ dataController.get('/tattoos', async (req, res) => {
 });
 
 dataController.post('/upload', isAdmin() ,uploads.array("files"),async (req, res) => {
+    console.log(`file "${req.files[0].filename}" received`);
 
     const imageUrl = '../' + req.files[0].destination + '/' + req.files[0].filename;
 
     const tattoo = await addTattoo(imageUrl);
-
-    console.log(`file "${req.files[0].filename}" received`);
+    console.log(`User with email: ${req.user.email} has added a new photo`);
     res.json({ status: "files received"}).end();
 });
 
 dataController.delete('/tattoos/:id', isAdmin(), async (req, res) => {
     try {
         await deleteById(req.params.id);
-        console.log(`tattoo with id: ${req.params.id} has been deleted.`);
+        console.log(`image with id: ${req.params.id} has been deleted from user with email: ${req.user.email}.`);
         res.status(204).end();
     } catch(error) {
         const message = parseError(error);
