@@ -1,5 +1,4 @@
 export function closeFullImg(e) {
-  console.log(e.currentTarget.parentElement);
     e.currentTarget.parentElement.style.display = "none";
   }
   

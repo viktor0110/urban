@@ -23,7 +23,7 @@ export async function renderGalleryPage(ctx) {
 const galleryTemplate = (tattoos, user, deleteHandler) => html`
 <section id="galleryPage" class="galleryPage">
     <div class="full-img" id="fullImgBox">
-        <img src="../../src/assets/images/tattoos/1.jpg" alt="no-img" id="fullImg">
+        <img src="" alt="no-img" id="fullImg">
         <span @click=${closeFullImg}>X</span>
         ${user && user._role == 'admin' ? html`
             <span @click=${deleteHandler} class="delete">Delete</span>` 
