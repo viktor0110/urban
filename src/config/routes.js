@@ -7,6 +7,7 @@ import { renderLoginPage } from '../views/loginPage.js';
 import { renderLogoutPage } from '../views/logoutPage.js';
 import { renderRegisterPage } from '../views/registerPage.js';
 import { renderUploadPage } from '../views/uploadPage.js';
+import { renderDefaultPage } from '../views/defaultPage.js';
 
 export function app(page) {
     page(decorateContext);
@@ -19,6 +20,7 @@ export function app(page) {
     page('/gallery', renderGalleryPage);
     page('/booking', renderBookingPage);
     page('/upload', renderUploadPage);
+    page('*', renderDefaultPage);
 
     page.start();
 }
