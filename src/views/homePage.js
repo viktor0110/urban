@@ -6,51 +6,31 @@ export async function renderHomePage(ctx) {
 
 const homeTemplate = () => html`
 <section id="homePage" class="homePage">
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nostrum quos repellat hic reprehenderit corporis veniam natus quis dolore? Rerum laborum quo dignissimos? Vitae itaque nemo voluptatem ullam reprehenderit quos.</p>
+<div class="message">
+    <h2>Meet our tattoo artists</h2>
+    <p>We specialize in many different tattoo genres while keeping traditional tattooing roots.We are always looking to break boundaries to provide you with a truly unique piece.We prefer working with our clients and collaborate on new ideas, or adding to existing ones, to achieve a finished product that leaves everyone satisfied.Our greatest reward is to leave you feeling proud with your new tattoo.</p>
+</div>
+<div class="artists" id="artists">
+    <div class="artist">
+        <img src="./src/assets/images/artists/artist1.jpg" alt="no-image">
+        <h3>Stella</h3>
+        <span class="artist-info">Stella is very talanted artist, who graduated from the art academy! She has over 8 years of experience in tattooing and hers work is amazing!</span>
+    </div>
+    <div class="artist">
+        <img src="./src/assets/images/artists/artist2.jpg" alt="no-image">
+        <h3>Stefan</h3>
+        <span class="artist-info">Stefan started tattooing in 2008 and enjoys working in many styles. Illustrative neo-traditional tattoos are his main focus, but he is also confident in Japanese styles and realism. </span>
+    </div>
+    <div class="artist">
+        <img src="./src/assets/images/artists/artist3.jpg" alt="no-image">
+        <h3>Kaloyan</h3>
+        <span class="artist-info">Kaloyan began tattooing in 2006. He enjoys many styles of tattooing, but specializes in large-scale illustrative and Japanese work.</span>
+    </div>
+    <div class="artist">
+        <img src="./src/assets/images/artists/artist4.jpg" alt="no-image">
+        <h3>Eva</h3>
+        <span class="artist-info">Eva is with 9 years of tattoo experience and provides not only quality tattoos ,but also personal approach to each client. She also specialises in temporary tattoos with natural and safe pigments.</span>
+    </div>
+</div>
 </section>
 `;
