@@ -37,7 +37,11 @@ async function login(email, password) {
     throw new Error('Incorrect email or password');
    };
 
-   return createToken(user); 
+   const token = createToken(user);
+
+   tokenBlackList.delete(token);
+
+   return token; 
 };
 
 async function logout(token) {

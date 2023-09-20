@@ -22,7 +22,6 @@ if (data) {
 
 try {
     const response = await fetch(host, options);
-
     let result;
     if (response.status !== 204) {
       result = await response.json();
@@ -35,7 +34,7 @@ try {
 
       throw result;
     }
-
+    
     return result;
   } catch (error) {
     alert(error.message);

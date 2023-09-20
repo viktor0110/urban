@@ -1,7 +1,9 @@
 import { html, nothing } from '../../node_modules/lit-html/lit-html.js';
 import { getTattoos, deleteTattoo } from '../data/endpoints.js';
-import { closeFullImg,openFullImg } from '../services/galleryService.js';
+import { closeFullImg, openFullImg, escButton } from '../services/galleryService.js';
 import { getUser } from '../services/util.js';
+
+escButton();
 
 export async function renderGalleryPage(ctx) {
     const tattoos = await getTattoos();

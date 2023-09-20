@@ -11,7 +11,8 @@ function hasUser() {
 
 function isAdmin() {
     return (req, res, next) => {
-        if(req.isAdmin && req.isAdmin == 'admin') {
+
+        if(req.isAdmin == 'admin') {
             next();
         }else {
             res.status(401).json({ message: 'You don`t have access to do that!'});
