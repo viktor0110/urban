@@ -10,12 +10,16 @@ export function openFullImg(e) {
   fullImgBox.style.display = "flex";
   fullImg.src = imgPath;
   fullImg['data-id'] = e.currentTarget.attributes["data-id"].value;
+  escButton();
 }
 
-export function escButton() {
-  document.addEventListener('keydown', (e) => {
-    if (e.code == "Escape") {
-      document.getElementById('fullImgBox').style.display = "none";
-    }
-  });
+function escButton() {
+  document.addEventListener('keydown', escHandler);
+}
+
+function escHandler(e) {
+  if (e.code == "Escape") {
+    document.getElementById('fullImgBox').style.display = "none";
+  }
+  document.removeEventListener('keydown', escHandler );
 }
