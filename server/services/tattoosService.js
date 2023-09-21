@@ -3,7 +3,11 @@ const fs = require('fs');
 const path = require('path');
 
 async function getAll() {
-    return Tattoos.find({}).sort({"imageUrl": 1});
+    return Tattoos.find({}).sort({"_id": 1});
+}
+
+async function getById(id) {
+    return Tattoos.findById(id);
 }
 
 async function deleteById(id) {
@@ -24,5 +28,6 @@ async function addTattoo(imageUrl) {
 module.exports = {
     getAll,
     deleteById,
-    addTattoo
+    addTattoo,
+    getById
 }
