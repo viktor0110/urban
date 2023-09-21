@@ -12,7 +12,7 @@ const options = {
 if (user) {
     options.headers['X-Authorization'] = user.accessToken;
     if (user._role == 'admin') {
-        options.headers['isAdmin'] = user._role;
+        options.headers.user = JSON.stringify(user);
     }
 }
 

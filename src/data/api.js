@@ -11,9 +11,7 @@ async function request(method, url, data) {
   const user = getUser();
   if (user) {
     options.headers['X-Authorization'] = user.accessToken;
-    if(user._role == 'admin') {
-      options.headers['isAdmin'] = user._role;
-    }
+    options.headers.user = JSON.stringify(user);
   }
 
   if (data) {

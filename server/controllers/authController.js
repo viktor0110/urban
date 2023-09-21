@@ -1,7 +1,7 @@
 const { register, login, logout } = require('../services/userService');
 const { body, validationResult } = require('express-validator');
 const { parseError } = require('../utils/parseError');
-const { isGuest } = require('../middlewares/guards');
+const { isGuest, hasUser } = require('../middlewares/guards');
 
 const authController = require('express').Router();
 
@@ -17,7 +17,7 @@ async (req, res) => {
         } 
         const token = await register(req.body.email, req.body.password, req.body.fullName, req.body.phone);
        res.json(token);
-       console.log(`a new user just registered with email: ${req.body.email}`);
+       console.log(`a new user has been registered with email: ${req.body.email}`);
     } catch(error) {
         const message = parseError(error);
         res.status(400).json( { message } );
@@ -36,7 +36,7 @@ authController.post('/login', isGuest(), async (req, res) => {
     }
 });
 
-authController.get('/logout', async (req, res) => {
+authController.get('/logout',hasUser(), async (req, res) => {
     const token = req.token;
     await logout(token);
     res.status(204).end();

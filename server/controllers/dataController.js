@@ -13,17 +13,18 @@ const uploads = fileTransfer();
 
 dataController.post('/upload', isAdmin(), uploads.array("files"),async (req, res) => {
     const imageUrl = '../' + req.files[0].destination + '/' + req.files[0].filename;
-
     const tattoo = await addTattoo(imageUrl);
-    console.log(`User with email: ${req.user.email} has added a new photo(file "${req.files[0].filename}")`);
+    let user = JSON.parse(req.headers.user);
+    console.log(`User with email: ${user.email} has added a new photo(file "${req.files[0].filename}")`);
     res.json({ status: "files received"}).end();
 });
 
 dataController.delete('/tattoos/:id', isAdmin(), async (req, res) => {
     try {
+        
         const id = req.params.id;
         await deleteById(id);
-        console.log(`image with id: ${id} has been deleted from user with email: ${req.user.email}.`);
+        console.log(`image with id: ${id} has been deleted from user with email: ${JSON.parse(req.headers.user).email}.`);
         res.status(204).end();
     } catch(error) {
         const message = parseError(error);

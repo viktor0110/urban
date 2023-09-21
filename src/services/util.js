@@ -26,12 +26,14 @@ export function createSubmitHandler(callback) {
 
 export function checkUser(ctx) {
   if(ctx.user) {
+    alert('You are already logged in');
     ctx.page.redirect('/');
 }
 };
 
 export function checkAdmin(ctx) {
   if(!ctx.user || ctx.user._role != 'admin') {
+    alert('You don`t have access!');
     ctx.page.redirect('/');
 }
 };
