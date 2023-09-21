@@ -1,3 +1,4 @@
+/* tyk */
 @media screen and (max-width: 360px) {
     header {
         position: static;
@@ -135,7 +136,7 @@
         font-size: 25px;
     }
 }
-
+/* tyk */
 @media screen and (max-width: 480px) and (min-width: 361px) {
     header {
         position: static;
@@ -274,7 +275,7 @@
         font-size: 25px;
     }
 }
-
+/* tyk */
 @media screen and (max-width: 600px) and (min-width: 481px) {
     header {
         position: static;
@@ -410,7 +411,7 @@
         font-size: 35px;
     }
 }
-
+/* tyk */
 @media screen and (max-width: 768px) and (min-width: 601px) {
     header {
         position: static;
@@ -553,8 +554,8 @@
     }
 
     .nav-logo {
-        width: 35vw;
-        left: 32%;
+        width: 20vw;
+        left: 39%;
     }
 
     .user-pic {
@@ -563,12 +564,13 @@
     }
 
     .nav-bar {
-        margin-top: 30%;
-        gap: 4%;
+        margin-top: 17%;
+        margin-left: 2%;
+        gap: 6%;
     }
 
     .nav-link {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .gallery {
@@ -600,21 +602,35 @@
     }
 
     .galleryPage {
-        padding: 30% 15% 0 0;
+        padding: 5% 15% 0 0;
     }
 
     .img-gallery>img {
         width: 70vw;
     }
-
     .homePage {
-        padding-left: 4%;
-        margin-top: 35%;
+        padding-left: 24%;
+        margin-top: 10%;
         font-size: 20px;
     }
+    .artists > div > img{
+        width: 150px;
+        height: 150px;
+    }
+    .artist-info{
+        font-size: 14px;
+    }
+    .message {
+        margin-bottom: 10%;
+        width: 100%;
+    }
+    .message>p{
+        width: 100%;
+    }
+  
 
     .uploadPage {
-        padding-top: 30%;
+        padding-top: 10%;
     }
 
     .uploadPage>.uploadForm {
@@ -625,7 +641,7 @@
 
     .bookingPage {
         padding-top: 10%;
-        margin-top: 30%;
+        margin-top: 10%;
     }
 
     .bookingPage>.message {
@@ -639,8 +655,8 @@
     }
 
     .loginPage {
-        padding-left: 2%;
-        margin-top: 30%;
+        padding-left: 4%;
+        margin-top: 10%;
     }
 
     .loginForm {
@@ -648,8 +664,8 @@
     }
 
     .registerPage {
-        padding-left: 2%;
-        margin-top: 30%;
+        padding-left: 4%;
+        margin-top: 10%;
     }
 
     .registerForm {
@@ -657,7 +673,7 @@
     }
 
     .contactPage {
-        margin-top: 30%;
+        margin-top: 15%;
         padding: 0 0 10% 5%;
     }
 
@@ -702,14 +718,14 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        left: 41.4%;
+        left: 37.4%;
         z-index: 100;
     }
     .nav-bar{
         position: absolute;
         top: 30%;
-        left: 29.5%;
-        gap: 5%;
+        left: 24.5%;
+        gap: 10%;
         background-color: black;
     }
     .user-pic{
@@ -726,7 +742,7 @@
         background: black;
         width: 20vw;
         z-index: 100;
-        margin-top: 3%;
+        margin-top: 4%;
     }
     .gallery{
         margin-right: 26%;
@@ -749,14 +765,24 @@
     }
 
     .homePage {
-        padding-left: 4%;
+        padding-left: 9%;
         margin-top: 0;
         font-size: 20px;
+    }
+    .artists > div > img{
+        width: 150px;
+        height: 150px;
+    }
+    .artist-info{
+        font-size: 14px;
+    }
+    .message {
+        margin-bottom: 10%;
     }
 
     .uploadPage {
         padding-top: 0;
-        margin-right: 7%;
+        margin-right: 15%;
     }
 
     .uploadPage>.uploadForm {
@@ -768,7 +794,7 @@
     .bookingPage {
         padding-top: 5%;
         margin-top: 0;
-        margin-right: 5%;
+        margin-right: 15%;
     }
 
     .bookingPage>.message {
@@ -784,7 +810,7 @@
     .loginPage {
         padding-left: 2%;
         margin-top: 0;
-        margin-right: 5%;
+        padding-right: 13%;
     }
     
 
@@ -794,7 +820,7 @@
 
     .registerPage {
         margin-top: 0;
-        margin-right: 4%;
+        padding-right: 12%;
     }
 
     .registerForm {
@@ -803,10 +829,10 @@
 
     .contactPage {
         margin-top: 0%;
-        padding: 0 0 2% 1%;
+        padding: 0 10% 2% 1%;
     }
     .footer{
-        margin-left: 1%;
+        padding-right: 2%;
     }
 
 }
@@ -837,12 +863,12 @@
         position: absolute;
         top: 40%;
         left: 32.5%;
-        gap: 5%;
+        gap: 10%;
         background-color: black;
     }
     .user-pic{
        font-size: 20px;
-       margin: 0.05% 2% 0 0;
+       margin: 1% 2.5% 0 0;
     }
     
     .sub-menu-wrap.open-menu {
@@ -854,7 +880,8 @@
         background: black;
         width: 20vw;
         z-index: 100;
-        margin-top: 3%;
+        margin-top: 4%;
+        margin-right: 1%;
     }
     .gallery{
         margin-right: 30%;
@@ -879,7 +906,7 @@
     }
 
     .homePage {
-        padding-left: 4%;
+        padding-left: 18%;
         margin-top: 0;
         font-size: 20px;
     }
@@ -901,7 +928,7 @@
     .bookingPage {
         padding-top: 0%;
         margin-top: 0;
-        margin-right: 5%;
+        margin-right: 8%;
     }
 
     .bookingPage>.message {
@@ -969,7 +996,7 @@
         position: absolute;
         top: 40%;
         left: 34.9%;
-        gap: 5%;
+        gap: 15%;
         background-color: black;
     }
     .user-pic{
@@ -1011,7 +1038,7 @@
     }
 
     .homePage {
-        padding-left: 4%;
+        padding-left: 20%;
         margin-top: 0;
         font-size: 20px;
     }
@@ -1065,7 +1092,7 @@
 
     .contactPage {
         margin-top: 0%;
-        padding: 0 0 2% 1%;
+        padding: 0 5% 2% 1%;
     }
     .footer{
         margin-left: 1%;
@@ -1098,7 +1125,7 @@
         position: absolute;
         top: 40%;
         left: 36%;
-        gap: 5%;
+        gap: 15%;
         background-color: black;
     }
     .user-pic{
@@ -1140,7 +1167,7 @@
     }
 
     .homePage {
-        padding-left: 4%;
+        padding-left: 20%;
         margin-top: 0;
         font-size: 20px;
     }
