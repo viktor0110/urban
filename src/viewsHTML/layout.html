@@ -7,10 +7,10 @@
       <div class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
           <div class="user-info">
-            <h1>${user.username}</h1>
+            <h4>${user.email}</h4>
           </div>
           <hr>
-          <a href="/logout" class="sub-menu-link">
+          <a @click=${toggleMenu} href="/logout" class="sub-menu-link">
             <p>Logout</p>
           </a>
         </div>
@@ -23,14 +23,14 @@
       <div class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
           <div class="user-info">
-            <h1>Guest</h1>
+            <h4>Guest</h4>
           </div>
           <hr>
-          <a href="/login" class="sub-menu-link">
-            <p>Login</p>
+          <a @click=${toggleMenu} href="/login" class="sub-menu-link">
+            <p>Sign in</p>
           </a>
-          <a href="/register" class="sub-menu-link">
-            <p>Register</p>
+          <a @click=${toggleMenu} href="/register" class="sub-menu-link">
+            <p>Sign up</p>
           </a>
         </div>
       </div>
@@ -48,7 +48,7 @@
       <li class="nav-link booking">
         <a href="/booking">BOOKING</a>
       </li>
-      ${user && user.username == 'admin' ? html`
+      ${user && user._role == 'admin' ? html`
       <li class="nav-link">
         <a href="/upload">UPLOAD</a>
       </li>`
@@ -60,19 +60,22 @@
   </nav>
 </header>
 <main class="main" id="main">
-  <div class="main__content" id="content">${content}</div>
+  <div class="content" id="content">${content}</div>
 </main>
 <footer class="footer">
-  <div class="links">
-    <a class="links__instagram" href="https://www.instagram.com/urban.tattoo.sofia/"><i id="instagram"
-        class="fa-brands fa-instagram links__instagram--icon"></i></a>
-    <a class="links__facebook" href="https://www.facebook.com/urban.tattoo.sofia/"><i id="facebook"
-        class="fa-brands fa-square-facebook links__facebook--icon"></i></a>
-    <a class="links__google" href="https://g.page/r/CbxBJYKl-n-wEB0"><i id="google"
-        class="fa-brands fa-square-google-plus links__google--icon"></i></a>
+  <div class="links-footer">
+    <a class="instagram" href="https://www.instagram.com/urban.tattoo.sofia/">
+      <i class="fa-brands fa-instagram instagram-icon"></i>
+    </a>
+    <a class="facebook" href="https://www.facebook.com/urban.tattoo.sofia/">
+      <i class="fa-brands fa-square-facebook facebook-icon"></i>
+    </a>
+    <a class="google" href="https://g.page/r/CbxBJYKl-n-wEB0">
+      <i class="fa-brands fa-square-google-plus google-icon"></i>
+    </a>
   </div>
   <div class="copyright">
     © 2023 Copyright:
-    <a class="copyright__author" href="https://www.linkedin.com/in/viktor-stefanov-953047263/">Viktor Stefanov</a>
+    <a class="copyright-author" href="https://www.linkedin.com/in/viktor-stefanov-953047263/">Viktor Stefanov</a>
   </div>
 </footer>

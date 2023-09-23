@@ -1,8 +1,8 @@
-<section id="uploadPage">
-    <form @submit=${handler} class="uploadForm">
+<section id="uploadPage" class="uploadPage">
+    <form @submit=${handler} class="uploadForm" enctype='multipart/form-data'>
         <div>
             <label for="photo">Photo:</label>
-            <input class="input-photo" id="photo" name="photo" type="file">
+            <input class="input-photo" id="files" name="photo" type="file">
         </div>
         <button class="btn" type="submit">Upload</button>
     </form>
