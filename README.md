@@ -7,5 +7,7 @@
 <p align="center">
 Simple Single Page Application with client side rendering and fully responsive design.Using Local REST Service. 
 <br>
-Dependencies: LIT-HTML, PAGE, HTTP-SERVER.
+Dependencies:<br>
+  FRONT-END: LIT-HTML, PAGE, HTTP-SERVER.<br>
+  BACK-END: EXPRESS, EXPRESS-VALIDATOR, MONGOOSE, MULTER, NODEMON, JSONWEBTOKEN, BCRYPT.
 </p>
