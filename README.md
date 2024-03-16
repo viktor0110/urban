@@ -9,5 +9,5 @@ Simple Single Page Application with client side rendering and fully responsive d
 <br>
 Dependencies:<br>
   FRONT-END: LIT-HTML, PAGE, HTTP-SERVER.<br>
-  BACK-END: EXPRESS, EXPRESS-VALIDATOR, MONGOOSE, MULTER, NODEMON, JSONWEBTOKEN, BCRYPT.
+  BACK-END: EXPRESS, EXPRESS-VALIDATOR, MONGOOSE, MULTER, JSONWEBTOKEN, BCRYPT.
 </p>
